@@ -20,7 +20,14 @@ get_header(); ?>
 	</ul>
 	
 	<div id="slider">
-		<?php dynamic_content_gallery(); ?>
+		<ul>
+			<li id="slide1"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+			<li id="slide2"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+			<li id="slide3"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+			<li id="slide4"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+			<li id="slide5"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+			<li id="slide6"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/img/slide.jpg" alt="" /></a></li>
+		</ul>
 	</div>
 	
 	<div id="slider-nav">
