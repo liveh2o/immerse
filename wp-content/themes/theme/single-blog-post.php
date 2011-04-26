@@ -5,47 +5,35 @@
  */
 
 get_header(); ?>
+		
+<?php include_once 'section-menu.php'; ?>
 
-	
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>		
 		
 		
-<section id="splash" class="section">
-	<?php include_once 'section-menu.php'; ?>
-	<?php if(is_category( 'Church' ) ){?>
-	<div id="section-image">
-		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide1.jpg" alt="" />
-	</div>	
-	<img src="<?php bloginfo('template_directory'); ?>/img/badge1.png" alt="" id="badge" />
-	<?php };?>
-</section><!-- e: splash -->
-				
-		
-
-<section id="article-head" class="section">
-	<span class="author">
-		<?php the_author(); ?>
-	</span>
-	<a href="#" class="al1">Past Articles</a>
-	<a href="#" class="al2">Like This</a>
-	<a href="#" class="al3">Tweet This</a>
-</section>
+<h2 class="page-title"><?php the_title(); ?></h2>
 
 
-
-<section id="article" class="section">
-	<article class="entry">What HAPPENS!!!
+<section id="page" class="section">
+	<ul id="entry-social">
+		<li><a href="#" class="es1">Tweet This</a></li>
+		<li><a href="#" class="es2">Like This</a></li>
+		<li><a href="#" class="es3">Share This</a></li>		
+	</ul>
+	
+	<?php if ( has_post_thumbnail() ) {?>
+	<div id="entry-head">		
+		<?php the_post_thumbnail('type1'); ?>
+	</div>
+	<?php };?>	
+			
+	<div class="entry is-post" id="post-<?php the_ID(); ?>">
 		<?php the_content('Read the rest of this entry &raquo;'); ?>
-	</article>
-</section>
-
-
-<section id="about" class="section">
-	<img src="img/avatar.jpg" alt="" />
-	<strong>About the Author</strong>
-	<p>content</p>
+	</div>
+	
+	
 </section>
 
 

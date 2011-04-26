@@ -5,35 +5,84 @@
  */
 
 get_header(); ?>
-		
-<?php include_once 'section-menu.php'; ?>
 
+	
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>		
 		
+<?php $term = get_term_by( 'id', get_query_var( $post->ID ), get_query_var( 'taxonomy' ) ); ?>
+<?php $val = ($term->name); echo $val;?>
+
+<section id="splash" class="section">
+	<?php include_once 'section-menu-vert.php'; ?>
+	
+	<?php if($val == "Church"){?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide1.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge1.png" alt="" id="badge" />
+	<?php } else if($val == "Arts and Culture"){?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide2.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge2.png" alt="" id="badge" />	
+	<?php } else if($val == "Story"){?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide3.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge3.png" alt="" id="badge" />	
+	<?php } else if($val == "Christian History and Thought"){?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide4.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge4.png" alt="" id="badge" />	
+	<?php } else if($val == "Theology"){?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide5.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge5.png" alt="" id="badge" />	
+	<?php } else {?>
+	<div id="section-image">
+		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide6.jpg" alt="" />
+	</div>	
+	<img src="<?php bloginfo('template_directory'); ?>/img/badge6.png" alt="" id="badge" />	
+	<?php };?>
+</section><!-- e: splash -->
+				
 		
-<h2 class="page-title"><?php the_title(); ?></h2>
+
+<section id="article-head" class="section">
+	<span class="author">
+		<?php the_author(); ?>
+	</span>
+	<a href="#" class="al1">Past Articles</a>
+	<a href="#" class="al2">Like This</a>
+	<a href="#" class="al3">Tweet This</a>
+</section>
 
 
-<section id="page" class="section">
-	<ul id="entry-social">
-		<li><a href="#" class="es1">Tweet This</a></li>
-		<li><a href="#" class="es2">Like This</a></li>
-		<li><a href="#" class="es3">Share This</a></li>		
-	</ul>
+
+<section id="article" class="section">
+	<article class="entry ar-entry">
 	
-	<?php if ( has_post_thumbnail() ) {?>
-	<div id="entry-head">		
-		<?php the_post_thumbnail('type1'); ?>
-	</div>
-	<?php };?>	
-			
-	<div class="entry is-post" id="post-<?php the_ID(); ?>">
 		<?php the_content('Read the rest of this entry &raquo;'); ?>
-	</div>
+	</article>
 	
+		
+		<div class="navigation">
+			<span class="alignleft"><?php previous_post('%', 'PREVIOUS', 'no'); ?></span>
+			<span class="alignright"><?php next_post('%', 'NEXT', 'no'); ?></span>
+		</div>
 	
+
+</section>
+
+
+<section id="about" class="section">
+	<?php echo get_avatar( get_the_author_email(), '84' ); ?>
+	<strong>About the Author</strong>
+	<p><?php the_author_meta('description'); ?></p>
 </section>
 
 

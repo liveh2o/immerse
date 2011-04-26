@@ -117,12 +117,12 @@ body {
 #header #nav a {
   float: left;
   text-transform: uppercase;
-  letter-spacing: -0.2em;
-  padding: 0 5px;
+  letter-spacing: -0.1em;
+  padding: 1px 5px 0 5px;
   color: #333333;
   height: 39px;
   line-height: 39px;
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: none;
 }
 #header #nav a:hover { background: rgba(122, 133, 53, 0.33); }
@@ -455,6 +455,10 @@ body {
   position: relative;
   padding: 52px;
   border-bottom: 2px solid #bfbfbf;
+-moz-column-count: 2;
+-moz-column-gap: 1em;
+-webkit-column-count: 2;
+-webkit-column-gap: 1em;
 }
 .entry h2 {
   font-size: 20px;
