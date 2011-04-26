@@ -11,12 +11,12 @@ get_header(); ?>
 
 <section id="splash" class="section">
 	<ul id="article-menu">		
-		<li<?php if($val == "Church"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/church/" class="ai1 active">Church</a></li>
-		<li<?php if($val == "Arts and Culture"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/arts-and-culture/" class="ai2">Arts &amp; Culture</a></li>
-		<li<?php if($val == "Story"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/story/" class="ai3">Story</a></li>
-		<li<?php if($val == "Christian History and Thought"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/christian-history-and-thought/" class="ai4">Christian History &amp; Though</a></li>
-		<li<?php if($val == "Theology"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/theology/" class="ai5">Theology</a></li>
-		<li<?php if($val == "Spiritual Formation"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/article-categories/spiritual-formation/" class="ai6">Spiritual Formation</a></li>
+		<li<?php if($val == "Church"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/church/" class="ai1 active">Church</a></li>
+		<li<?php if($val == "Arts and Culture"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/arts-and-culture/" class="ai2">Arts &amp; Culture</a></li>
+		<li<?php if($val == "Story"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/story/" class="ai3">Story</a></li>
+		<li<?php if($val == "Christian History and Thought"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/christian-history-and-thought/" class="ai4">Christian History &amp; Though</a></li>
+		<li<?php if($val == "Theology"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/theology/" class="ai5">Theology</a></li>
+		<li<?php if($val == "Spiritual Formation"){ echo " class='active'";};?>><a href="<?php bloginfo('url'); ?>/spiritual-formation/" class="ai6">Spiritual Formation</a></li>
 	</ul>
 	
 	<div id="slider">
