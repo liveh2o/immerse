@@ -74,7 +74,6 @@
 
 
 <!-- site JS -->
-<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery-1.5.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/script.js"></script>
 

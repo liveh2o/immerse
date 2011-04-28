@@ -12,7 +12,7 @@ get_header(); ?>
 <section id="splash" class="section">
 	<?php include_once 'section-menu-vert.php'; ?>
 	<div id="slider">
-		<?php dynamic_content_gallery(); ?>
+		<?php if (function_exists('simple_nivo_slider')) simple_nivo_slider(); ?>
 	</div>
 	
 	<div id="slider-nav">
@@ -30,12 +30,7 @@ get_header(); ?>
 
 
 <section id="ads4" class="section">
-	<ul>
-		<li><a href="#"><span>advert</span></a></li>
-		<li><a href="#"><span>advert</span></a></li>
-		<li><a href="#"><span>advert</span></a></li>
-		<li><a href="#"><span>advert</span></a></li>
-	</ul>
+	<?php echo adrotate_block(1); ?>
 </section><!-- e: ads 4 -->
 
 
