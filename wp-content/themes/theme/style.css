@@ -564,11 +564,12 @@ div.ad_wrapper {
 }
 #twitter {
   position: relative;
-  height: 41px;
   padding-bottom: 12px;
+  height:41px;
   background: url(img/twitter.jpg) top right no-repeat;
   width: 792px;
   margin: auto;
+  overflow:hidden;
 }
 #twitter #go-twitter {
   position: absolute;
@@ -578,14 +579,19 @@ div.ad_wrapper {
   width: 31px;
   text-indent: -9999em;
 }
-#twitter p {
+#twitter ul {
+  color: #999999;
   float: left;
-  width: 650px;
-  padding: 0 0 0 15px;
-  font-size: 13px;
-  height: 41px;
-  line-height: 41px;
+  width: 700x;
+  padding: 8px 40px 0 15px;
+  font-size: 11px;
   text-align: left;
+}
+#twitter li {
+  border:none !important;
+}
+#twitter a, #twitter a:visited {
+  color:#5b898c;
 }
 #sections {
   position: relative;

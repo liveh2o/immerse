@@ -28,7 +28,7 @@ get_header(); ?>
 </section><!-- e: ads 4 -->
 
 <section id="twitter" class="section">
-    <p>content of a tweet</p>
+    <?php echo do_shortcode('[twitter-feed username="immersejournal" mode="public" num="1" img="no" followlink="no" linklove="no" timeline="no"]'); ?>
     <a href="#" id="go-twitter">Twitter</a>
 </section><!-- e: twitter -->
 
