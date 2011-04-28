@@ -11,22 +11,36 @@ if($ip != "174.126.90.246"){
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-
 <head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/reset.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
-<?php wp_head(); ?>
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+    <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <?php
+      if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+      wp_head();
+    ?>
+<!-- site JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/script.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#slider').nivoSlider({
+		effect:'slideInLeft', //Specify sets like: 'fold,fade,sliceDown'
+		animSpeed:300, //Slide transition speed
+		pauseTime:6000,
+		directionNav:false, //Next and Prev
+		controlNav:true, //1,2,3...
+		startSlide:0 //Set starting Slide (0 index)
+        });
+      });
+    </script>
 </head>
 <body>
 

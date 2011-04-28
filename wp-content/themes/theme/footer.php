@@ -7,7 +7,7 @@
 
 
 <section id="ads1" class="section">
-	<a href="#" class="ads1"></a>
+	<?php echo adrotate_block(2); ?>
 </section>
 
 
@@ -71,13 +71,6 @@
 	</div>
 	
 </footer>
-
-
-<!-- site JS -->
-<script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/scripts/script.js"></script>
-
 <?php wp_footer(); ?>
-
 </body>
 </html>

@@ -213,41 +213,40 @@ body {
 }
 #splash #article-menu li a:hover { background-position: bottom left; }
 #splash #article-menu li.active a { background-position: bottom left; }
+#splash #sliderwrapper {
+  float: right;
+  padding: 8px 10px 28px 9px;
+  background: #4a8b8d;
+}
 #splash #slider {
   position: relative;
-  float: right;
   width: 582px;
   height: 291px;
-  padding: 8px 10px 0 9px;
-  background: #4a8b8d;
 }
 #splash #slider li { display: none; }
 #splash #slider #slide1 { display: block; }
-#splash #slider img {
-  position: relative;
-  display: block;
-  height: 291px;
-  width: 582px;
+#slider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  display:none;
 }
-#splash #slider-nav {
-  position: relative;
-  height: 28px;
-  padding-right: 10px;
-  width: 591px;
-  background: #4a8b8d;
-  float: right;
-  clear: right;
+#slider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  display:block; 
 }
-#splash #slider-nav ul {
-  float: right;
-  padding: 9px 0;
+
+#slider .nivo-controlNav {
+position: absolute;
+right: 0;
+bottom: -20px;
 }
-#splash #slider-nav li {
-  float: left;
-  height: 10px;
-  padding-left: 4px;
-}
-#splash #slider-nav a {
+.nivo-controlNav a {
   float: left;
   height: 10px;
   width: 10px;
@@ -256,9 +255,12 @@ body {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  text-indent: -9999px;
+  margin-right:3px;
+  cursor:pointer;
 }
-#splash #slider-nav a.active { background: #ffffff; }
-#splash #slider-nav a:hover { background: #ffffff; }
+.nivo-controlNav a:hover, .nivo-controlNav a.active, nivo-controlNav a:active  { background: #ffffff; }
+
 #splash #section-image {
   position: relative;
   float: right;
@@ -542,24 +544,17 @@ body {
   width: 792px;
   margin: auto;
 }
-#ads4 ul { width: 110%; }
-#ads4 li {
-  float: left;
-  padding-right: 9px;
+div.ad_wrapper { 
+  width: 110%; 
 }
 #ads4 a {
   float: left;
   width: 191px;
   height: 100px;
-  background: #ffffff;
   position: relative;
   color: #999999;
   text-decoration: none;
-}
-#ads4 span {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+  padding-right: 9px;
 }
 #ads4:after {
   content: "";
@@ -785,7 +780,7 @@ body {
 #foot-nav {
   position: relative;
   line-height: 1.8em;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #ffffff;
   padding: 10px 0;
