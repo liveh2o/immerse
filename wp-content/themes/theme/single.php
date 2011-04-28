@@ -117,8 +117,4 @@ get_header(); ?>
 
 <?php endif; ?>
 
-
-<?php include_once 'the-team.php'; ?>		
-	
-
 <?php get_footer(); ?>
