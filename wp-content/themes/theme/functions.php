@@ -11,7 +11,10 @@ function latest_articles() {
     if (have_posts()) {
       the_post();
       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'slider' );
-      echo "<a href=\"" . get_permalink() . "\"><img src=\"{$thumb[0]}\" /></a>";
+      if ($thumb) {
+        echo "<a href=\"" . get_permalink() . "\"><img src=\"{$thumb[0]}\" /></a>";
+      }
+      $thumb = null;
     } 
   }
 }
