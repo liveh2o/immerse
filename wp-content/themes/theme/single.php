@@ -44,7 +44,7 @@ get_header(); ?>
 	<img src="<?php bloginfo('template_directory'); ?>/img/badge5.png" alt="" id="badge" />	
 	<?php } else {?>
 	<div id="section-image">
-		<img src="<?php bloginfo('template_directory'); ?>/img/article-slide6.jpg" alt="" />
+		<?php the_post_thumbnail( 'full' ); ?>
 	</div>	
 	<img src="<?php bloginfo('template_directory'); ?>/img/badge6.png" alt="" id="badge" />	
 	<?php };?>
@@ -57,8 +57,14 @@ get_header(); ?>
 		<?php the_author(); ?>
 	</span>
 	<a href="#" class="al1">Past Articles</a>
-	<a href="#" class="al2">Like This</a>
-	<a href="#" class="al3">Tweet This</a>
+	<span class="al2"><?php tweet_this('facebook', '[TITLE] [EXCERPT] [URL]', 'Share This',
+		'Share This [URL]', 'noicon', 'share-this',
+		'tt', 'Post to Facebook'); ?>
+	</span>
+	<span class="al3"><?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', 'Tweet This',
+		'Tweet This [URL]', 'noicon', 'tweet-this',
+		'tt', 'Post to Twitter'); ?>
+	</span>
 </section>
 
 
