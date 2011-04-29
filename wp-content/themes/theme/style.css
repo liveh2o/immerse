@@ -173,7 +173,6 @@ body {
 #splash {
   position: relative;
   z-index: 50;
-  padding-bottom: 12px;
   width: 792px;
   margin: auto;
 }
@@ -541,7 +540,7 @@ bottom: -20px;
 }
 #ads4 {
   position: relative;
-  padding-bottom: 12px;
+  padding:12px 0;
   overflow: hidden;
   width: 792px;
   margin: auto;
