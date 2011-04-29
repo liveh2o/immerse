@@ -266,6 +266,8 @@ bottom: -20px;
   float: right;
   padding: 10px 10px 10px 9px;
   background: #26504c;
+  height: 406px;
+  width: 582px;
 }
 #splash #badge {
   position: absolute;
@@ -312,8 +314,8 @@ bottom: -20px;
   text-transform: uppercase;
   padding: 0 0 0 29px;
 }
-#page #entry-social a.es1 { background: url(img/ss1.jpg) top left no-repeat; }
-#page #entry-social a.es2 { background: url(img/ss2.jpg) top left no-repeat; }
+#page #entry-social span.es1 a.tweet-page { background: url(img/ss1.jpg) top left no-repeat; }
+#page #entry-social span.es2 a.post-page { background: url(img/ss2.jpg) top left no-repeat; }
 #page #entry-social a.es3 { background: url(img/ss3.jpg) top left no-repeat; }
 #page #entry-head {
   position: relative;
@@ -440,8 +442,8 @@ bottom: -20px;
   border-left: 2px solid #dee0db;
 }
 #article-head a.al1 { background: url(img/past.jpg) 10px center no-repeat; }
-#article-head a.al2 { background: url(img/like.jpg) 10px center no-repeat; }
-#article-head a.al3 { background: url(img/tweet.jpg) 10px center no-repeat; }
+#article-head span.al2 a.share-this { background: url(img/like.jpg) 10px center no-repeat; }
+#article-head span.al3 a.tweet-this { background: url(img/tweet.jpg) 10px center no-repeat; }
 #article-head a:hover { opacity: 0.6; }
 #article {
   position: relative;

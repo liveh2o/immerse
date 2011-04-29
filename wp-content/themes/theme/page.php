@@ -15,8 +15,16 @@ get_header(); ?>
 
 <section id="page" class="section">
 	<ul id="entry-social">
-		<li><a href="#" class="es1">Tweet This</a></li>
-		<li><a href="#" class="es2">Like This</a></li>
+		<li><span class="es1">
+		<?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', 'Tweet This',
+		'Tweet This [URL]', 'noicon', 'tweet-page',
+		'tt', 'Post to Twitter'); ?>
+		</span></li>
+		<li><span class="es2">
+		<?php tweet_this('facebook', '[TITLE] [EXCERPT] [URL]', 'Post This',
+		'Post This [URL]', 'noicon', 'post-page',
+		'tt', 'Post to Facebook'); ?>
+		</span></li>
 		<li><a href="#" class="es3">Share This</a></li>		
 	</ul>
 
