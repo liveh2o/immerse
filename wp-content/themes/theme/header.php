@@ -32,9 +32,9 @@ if($ip != "174.126.90.246"){
     <script type="text/javascript">
       $(window).load(function() {
         $('#slider').nivoSlider({
-		effect:'slideInLeft', //Specify sets like: 'fold,fade,sliceDown'
+		effect:'fade', //Specify sets like: 'fold,fade,sliceDown'
 		animSpeed:300, //Slide transition speed
-		pauseTime:6000,
+		pauseTime:9000,
 		directionNav:false, //Next and Prev
 		controlNav:true, //1,2,3...
 		startSlide:0 //Set starting Slide (0 index)
