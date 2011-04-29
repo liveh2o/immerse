@@ -1,9 +1,20 @@
 <?php
 /**
- * @package WordPress
- * @subpackage Theme
- */
+* @package WordPress
+* @subpackage Theme
+*/
 
+function latest_articles() {
+  $categories = array('church','arts-and-culture','story','christian-history-and-thought','theology','spiritual-formation');
+  foreach ($categories as $category) {
+    query_posts('category_name='.$category); 
+    if (have_posts()) {
+      the_post();
+      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'slider' );
+      echo "<a href=\"" . get_permalink() . "\"><img src=\"{$thumb[0]}\" /></a>";
+    } 
+  }
+}
 
 function register_my_menus() {
 	register_nav_menus(

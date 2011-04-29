@@ -10,13 +10,7 @@ get_header(); ?>
     <?php include_once 'section-menu-vert.php'; ?>
     <div id="sliderwrapper">
         <div id="slider">
-<?php
-  $args = array( 'numberposts' => 10, 'order'=> 'ASC', 'category_name' => 'church,arts-and-culture,story,christian-history-and-thought,theology,spiritual-formation');
-  $postslist = get_posts( $args );
-  foreach ($postslist as $post) : setup_postdata($post); ?> 
-    <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'thumbnail_size' ); ?>
-            <a href="<?php echo get_permalink(); ?>"><img src="<?php echo $thumb[0] ?>" /></a>
-<?php endforeach; ?>
+	    <?php latest_articles(); ?>
         </div>
     </div>
 </section><!-- e: splash -->
