@@ -31,6 +31,7 @@ set_post_thumbnail_size( 144, 130, true );
 add_image_size( 'type1', 792, 275, true ); 
 add_image_size( 'type2', 272, 171, true ); 
 add_image_size( 'type3', 113, 134, true ); 
-add_image_size( 'type4', 90, 119, true ); 
+add_image_size( 'type4', 90, 119, true );
+add_image_size( 'slider', 582, 291, true ); 
 
 ?>
