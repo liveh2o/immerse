@@ -3,24 +3,22 @@ var offset = 705;
 var width = 0;
 var pages = 0;
 var current_page = 1;
-
+var content;
 
 function nextPage() {
   position = parseInt($(".paginate").css("left")) - offset;
-  $(".paginate:first").css("left",position+'px'); 
-  $(".paginate:first").effect("highlight", {color: "#efefef"}, 1000);
+  content.css("left",position+'px'); 
+  content.effect("highlight", {color: "#efefef"}, 1000);
   current_page += 1;
-  console.log("current page: " + current_page);
   toggleNextButton();
   togglePreviousButton();
 }
 
 function previousPage() {
   position = parseInt($(".paginate").css("left")) + offset;
-  $(".paginate:first").css("left",position+'px'); 
-  $(".paginate:first").effect("highlight", {color: "#efefef"}, 1000);
+  content.css("left",position+'px'); 
+  content.effect("highlight", {color: "#efefef"}, 1000);
   current_page -= 1;
-  console.log("current page: " + current_page);
   toggleNextButton();
   togglePreviousButton();
 }
@@ -44,14 +42,14 @@ function togglePreviousButton() {
 $(document).ready(function() {
   var last_element = $('.paginate > p:last');
   width = last_element.offset().left + last_element.width();
-  $(".paginate").css("width", width);
   pages = parseInt(width / offset);
-  console.log("pages: " + pages);
+  content = $(".paginate:first");
 
   $('#next_button').click(function(e) {
     nextPage();
     e.preventDefault();
   });
+
   $('#previous_button').click(function(e) {
     previousPage();
     e.preventDefault();
