@@ -270,7 +270,7 @@ bottom: -20px;
 }
 #splash #badge {
   position: absolute;
-  bottom: -80px;
+  bottom: -91px;
   left: 0;
 }
 #splash:after {
@@ -314,7 +314,7 @@ bottom: -20px;
   padding: 0 0 0 29px;
 }
 #page #entry-social span.es1 a.tweet-page { background: url(img/ss1.jpg) top left no-repeat; }
-#page #entry-social span.es2 a.post-page { background: url(img/ss2.jpg) top left no-repeat; }
+#page #entry-social img.es2 { height: 24px; width: 23px; }
 #page #entry-social a.es3 { background: url(img/ss3.jpg) top left no-repeat; }
 #page #entry-head {
   position: relative;
@@ -330,6 +330,7 @@ bottom: -20px;
 #page .entry {
   position: relative;
   text-align: left;
+  overflow: hidden;
 }
 #extra {
   position: relative;
@@ -441,7 +442,7 @@ bottom: -20px;
   border-left: 2px solid #dee0db;
 }
 #article-head a.al1 { background: url(img/past.jpg) 10px center no-repeat; }
-#article-head span.al2 a.share-this { background: url(img/like.jpg) 10px center no-repeat; }
+#article-head div.al2 { float: right; width: 24px; height: 30px; border-left: 2px solid #DEE0DB; padding: 7px 0 0 30px; }
 #article-head span.al3 a.tweet-this { background: url(img/tweet.jpg) 10px center no-repeat; }
 #article-head a:hover { opacity: 0.6; }
 #article {
@@ -453,15 +454,31 @@ bottom: -20px;
   margin: auto;
 }
 #article.no-header { padding-top: 35px; }
-.entry.ar-entry { border-bottom: 0; }
+#page-window {
+  height: 41em;
+  margin: 0 52px;
+  overflow: hidden;
+  padding: 52px 0 0;
+  position: relative;
+  width:688px;
+}
+#page-window .entry.ar-entry {
+  border-bottom: 0;
+  height: 41em;
+  padding: 0;
+  position: absolute;
+    left: 0;
+    top: 52px;
+  width: auto !important;
+  -moz-column-width: 333px; 
+  -moz-column-gap: 20px;
+  -webkit-column-width: 333px; 
+  -webkit-column-gap: 20px;
+}
 .entry {
   position: relative;
   padding: 52px;
   border-bottom: 2px solid #bfbfbf;
--moz-column-count: 2;
--moz-column-gap: 1em;
--webkit-column-count: 2;
--webkit-column-gap: 1em;
 }
 .entry h2 {
   font-size: 20px;
@@ -471,13 +488,14 @@ bottom: -20px;
 .entry a { color: #254e4a; }
 .entry p {
   line-height: 1.5em;
-  padding-bottom: 1em;
+  padding-bottom: 0;
+  margin-bottom: 1.5em;
 }
 .entry strong { font-weight: bold; }
 #article .navigation { border-bottom: 2px solid #bfbfbf; }
 .navigation {
   position: relative;
-  padding: 14px 52px;
+  padding: 26px 52px 52px;
   overflow: hidden;
 }
 .navigation .alignleft { float: left; }
