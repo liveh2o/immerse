@@ -4,10 +4,13 @@
 * @subpackage Theme
 */
 
+function get_sections() {
+  return array('church','arts-and-culture','story','christian-history-and-thought','theology','spiritual-formation');
+}
+
 function latest_articles() {
-  $categories = array('church','arts-and-culture','story','christian-history-and-thought','theology','spiritual-formation');
-  foreach ($categories as $category) {
-    query_posts('category_name='.$category); 
+  foreach (get_sections() as $section) {
+    query_posts('category_name='.$section); 
     if (have_posts()) {
       the_post();
       $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'slider' );
@@ -31,7 +34,7 @@ add_action( 'init', 'register_my_menus' );
 
 function redirect_to_post(){
     global $wp_query;
-    if( is_archive() ){
+    if( is_category(get_sections()) ){
         the_post();
         $post_url = get_permalink();
         wp_redirect( $post_url );
