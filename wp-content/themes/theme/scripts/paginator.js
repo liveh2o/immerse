@@ -6,8 +6,8 @@ var current_page = 1;
 
 
 function nextPage() {
-  position = parseInt($(".paginate").css("margin-left")) - offset;
-  $(".paginate:first").css("margin-left",position+'px'); 
+  position = parseInt($(".paginate").css("left")) - offset;
+  $(".paginate:first").css("left",position+'px'); 
   $(".paginate:first").effect("highlight", {color: "#efefef"}, 1000);
   current_page += 1;
   console.log("current page: " + current_page);
@@ -16,8 +16,8 @@ function nextPage() {
 }
 
 function previousPage() {
-  position = parseInt($(".paginate").css("margin-left")) + offset;
-  $(".paginate:first").css("margin-left",position+'px'); 
+  position = parseInt($(".paginate").css("left")) + offset;
+  $(".paginate:first").css("left",position+'px'); 
   $(".paginate:first").effect("highlight", {color: "#efefef"}, 1000);
   current_page -= 1;
   console.log("current page: " + current_page);
