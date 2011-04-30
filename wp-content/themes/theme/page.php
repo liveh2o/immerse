@@ -20,11 +20,9 @@ get_header(); ?>
 		'Tweet This [URL]', 'noicon', 'tweet-page',
 		'tt', 'Post to Twitter'); ?>
 		</span></li>
-		<li><span class="es2">
-		<?php tweet_this('facebook', '[TITLE] [EXCERPT] [URL]', 'Post This',
-		'Post This [URL]', 'noicon', 'post-page',
-		'tt', 'Post to Facebook'); ?>
-		</span></li>
+		<li><img class="es2" src="<?php bloginfo('template_directory'); ?>/img/ss2.jpg" />
+        <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:29px; position: absolute;"></iframe>
+        </li>
 		<li><a href="#" class="es3">Share This</a></li>		
 	</ul>
 
@@ -67,9 +65,4 @@ get_header(); ?>
 	
 	
 </section>
-
-
-<?php include_once 'the-team.php'; ?>		
-	
-
 <?php get_footer(); ?>
