@@ -60,10 +60,6 @@ get_header(); ?>
     <div class="navigation">
         <span class="alignleft"><a href="#" id="previous_button" style="display:none;">PREVIOUS</a></span>
         <span class="alignright"><a href="#" id="next_button">NEXT</a></span>
-<!--
-        <span class="alignleft"><?php previous_post('%', 'PREVIOUS', 'no'); ?></span>
-        <span class="alignright"><?php next_post('%', 'NEXT', 'no'); ?></span>
- -->
     </div>
 </section>
 
@@ -79,17 +75,12 @@ get_header(); ?>
     <a href="#" class="ads2"></a>
 </section>
 
-
-
 <section id="comments" class="section">
-    <h3>Comments</h3>
+    <h3 id="comments-bar">Comments</h3>
     <div id="comwrap">
         <?php comments_template(); ?>
     </div>
 </section>
-
-
-    
     
 <?php endwhile; ?>
 
