@@ -71,7 +71,7 @@ a:hover{
 .underline     { border-bottom:1px solid; }
 .highlight     { background:#ffc; }
  
-.wrap          { width:960px;margin:0 auto; }
+/*.wrap          { width:960px;margin:0 auto; }*/
  
 .img-left      { float:left;margin:4px 10px 4px 0; }
 .img-right     { float:right;margin:4px 0 4px 10px; }

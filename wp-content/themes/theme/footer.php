@@ -4,14 +4,10 @@
  * @subpackage Theme
  */
 ?>
-
-
 <section id="ads1" class="section">
 	<?php echo adrotate_block(2); ?>
 </section>
-
-
-
+</div>
 <footer id="footer">
 	
 	<div id="foot">

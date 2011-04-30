@@ -45,13 +45,9 @@ if($ip != "174.126.90.246"){
     </script>
 </head>
 <body>
-
-
 <header id="head">
-	
 	<div id="header">
 		<h1><a href="<?php bloginfo('url'); ?>">Immerse | A Journal of Faith, Life, and Youth Ministry</a></h1>
-		
 		<form action="<?php bloginfo('url'); ?>/" method="post">
 			<p><input type="text" class="text" value="" name="s" />
 			<input type="submit" class="submit" value="go" /></p>			
@@ -62,11 +58,10 @@ if($ip != "174.126.90.246"){
 			<li><a href="http://www.youtube.com/immersejournal" class="social3">YouTube</a></li>
 			<li><a href="http://www.facebook.com/#!/profile.php?id=100002211903019" class="social4">Facebook</a></li>
 		</ul>
-		
 		<div id="nav">
 			<?php wp_nav_menu( array('menu' => 'Main Menu' )); ?>
 		</div>
 	</div>
-	
 </header><!-- e: head -->
-	
+<div id="wrap" class="wrap">
+  <img src="<?php bloginfo('template_directory'); ?>/img/barefoot-logo.png" alt="Barefoot Ministries" id="barefoot-logo" />

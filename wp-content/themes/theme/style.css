@@ -39,8 +39,11 @@ body {
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
 }
+.wrap {
+  min-width: 800px;
+  padding: 0 85px;
+}
 #head {
-  position: relative;
   height: 146px;
   z-index: 100;
   background: url(img/hbg.jpg) top left;
@@ -126,6 +129,15 @@ body {
   text-decoration: none;
 }
 #header #nav a:hover { background: rgba(122, 133, 53, 0.33); }
+#wrap {
+  margin: auto;
+  text-align: left;
+  width: 800px;
+}
+#barefoot-logo {
+  position: fixed;
+  margin: 150px 0 0 -75px;
+}
 #section-menu {
   position: relative;
   height: 61px;
