@@ -4,6 +4,18 @@
 * @subpackage Theme
 */
 
+function the_vimeo( $post_id, $width = 400, $height = 225, $html_options = '' ) {
+  $url = get_post_meta($post_id, 'vimeo_url', true);
+  if ( $url ) {
+    $return = "<iframe src=\"$url\" width=\"$width\" height=\"$height\"";
+    if ( $html_options != '' ) {
+      $return .= $html_options;
+    }
+    $return .= "></iframe>";
+    echo $return;
+  }
+}
+
 function get_sections() {
   return array('church','arts-and-culture','story','christian-history-and-thought','theology','spiritual-formation');
 }
