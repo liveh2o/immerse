@@ -290,6 +290,26 @@ bottom: -20px;
   width: 792px;
   margin: auto;
 }
+hgroup#subscribe-title {
+  width: 792px;
+  padding: 25px 0 20px 0;
+  margin: auto;
+  text-align: left;
+}
+hgroup#subscribe-title h2.page-title {
+ width: auto;
+ padding: 0;
+ margin: 0;
+ display: inline;
+}
+hgroup#subscribe-title h3.subtitle {
+ display: inline-block;
+ width: 495px;
+ font-weight: bold;
+ margin-left: 15px;
+ padding-left: 15px;
+ border-left: 2px solid #0D4548;
+}
 #page {
   position: relative;
   background: #ffffff;
@@ -331,6 +351,19 @@ bottom: -20px;
   position: relative;
   text-align: left;
   overflow: hidden;
+}
+#page .entry.subscribe {
+  padding: 16px;
+  margin-bottom: 10px;
+}
+#page .entry.subscribe div#subscribe-links {
+  color: #0D4548;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#page .entry.subscribe div#subscribe-links p {
+  display: inline;
+  margin-right: 30px;
 }
 #extra {
   position: relative;
