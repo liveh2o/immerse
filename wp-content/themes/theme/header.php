@@ -16,6 +16,7 @@ if($ip != "174.126.90.246"){
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style2.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
@@ -26,8 +27,11 @@ if($ip != "174.126.90.246"){
     ?>
 <!-- site JS -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+    <script src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js" type="text/javascript"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/script.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/paginator.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
     <script type="text/javascript">
       $(window).load(function() {
