@@ -352,6 +352,9 @@ hgroup#subscribe-title h3.subtitle {
   text-align: left;
   overflow: hidden;
 }
+#page .entry h3 {
+  margin: 1.5em 0;
+}
 #page .entry.subscribe {
   padding: 16px;
   margin-bottom: 10px;
@@ -575,13 +578,14 @@ hgroup#subscribe-title h3.subtitle {
   margin: auto;
   margin-bottom: 12px;
 }
-#comments h3 {
+#comments h3#comments-bar {
   position: relative;
   height: 27px;
   text-indent: -9999em;
   background: url(img/comments-bar.jpg) top left no-repeat;
 }
 #comments #comwrap { padding: 20px; }
+#comments #comwrap .dsq-trackback-url input { width: 500px; }
 #comments #comwrap #author { padding: 4px; }
 #comments #comwrap #email { padding: 4px; }
 #comments #comwrap #website { padding: 4px; }

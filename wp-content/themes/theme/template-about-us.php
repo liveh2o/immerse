@@ -20,16 +20,10 @@ include_once 'section-menu.php';
         </li>
         <li><a href="#" class="es3">Share This</a></li>        
     </ul>
-    <div id="entry-head">
-        <?php if ( has_post_thumbnail() ) {?>
-            <?php the_post_thumbnail('type1'); ?>
-        <?php } else {?>
-            <img src="<?php bloginfo('template_directory'); ?>/img/about-image.jpg" alt="" />
-        <?php };?>    
-    </div>
-    <?php if (have_posts()) : ?>
-    <?php while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
     <div class="entry is-post" id="post-<?php the_ID(); ?>">
+        <?php the_vimeo($post->ID, 688, 387) ?>
         <?php the_content('Read the rest of this entry &raquo;'); ?>
     </div>
     <?php endwhile; ?>
@@ -37,11 +31,11 @@ include_once 'section-menu.php';
         <div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
         <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
     </div>
-    <?php else : ?>
+<?php else : ?>
     <h2 class="center">Not Found</h2>
     <p class="center">Sorry, but you are looking for something that isn't here.</p>
-    <?php get_search_form(); ?>
-    <?php endif; ?>
+    <?php get_search_form();
+      endif; ?>
 </section>
 <?php
 include_once 'the-team.php';
