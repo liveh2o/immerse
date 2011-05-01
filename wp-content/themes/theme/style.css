@@ -23,6 +23,7 @@ Author: ClearElement
   position: relative;
   margin: auto;
   background: #ffffff;
+  margin-bottom: 10px;
   padding: 25px;
   text-align: left;
 }
@@ -39,7 +40,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .wrap {
-  min-width: 800px;
+  min-width: 792px;
   padding: 0 85px;
 }
 #head {
@@ -133,7 +134,7 @@ body {
 #wrap {
   margin: auto;
   text-align: left;
-  width: 800px;
+  width: 792px;
 }
 #barefoot-logo {
   position: fixed;
