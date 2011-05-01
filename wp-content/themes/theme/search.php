@@ -14,16 +14,7 @@ get_header(); ?>
 
 
 <section id="page" class="section">
-	<ul id="entry-social">
-		<li><a href="#" class="es1">Tweet This</a></li>
-		<li><a href="#" class="es2">Like This</a></li>
-		<li><a href="#" class="es3">Share This</a></li>		
-	</ul>
 
-	<div id="entry-head">
-		<img src="<?php bloginfo('template_directory'); ?>/img/blog-head.jpg" alt="" />
-	</div>
-	
 	
 	
 	<?php if (have_posts()) : ?>
@@ -40,7 +31,7 @@ get_header(); ?>
 	
 	<?php endwhile; ?>
 
-	<div class="navigation">
+	<div class="navigation search">
 		<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
 		<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
 	</div>
@@ -55,10 +46,6 @@ get_header(); ?>
 	
 	
 	
-</section>
-
-
-<?php include_once 'the-board.php'; ?>			
-	
+</section>	
 
 <?php get_footer(); ?>

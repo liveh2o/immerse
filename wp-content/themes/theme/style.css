@@ -24,7 +24,6 @@ Author: ClearElement
   margin: auto;
   background: #ffffff;
   padding: 25px;
-  width: 945px;
   text-align: left;
 }
 #issue-wrap p {
@@ -563,6 +562,9 @@ hgroup#subscribe-title h3.subtitle {
   font-size: 12px;
   color: #999999;
   background: url(img/right.jpg) center right no-repeat;
+}
+div.navigation.search {
+  margin-bottom: 10px;
 }
 #about {
   position: relative;
