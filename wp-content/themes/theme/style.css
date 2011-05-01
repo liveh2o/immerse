@@ -805,6 +805,16 @@ div.ad_wrapper {
   font-size: 17px;
   text-transform: uppercase;
 }
+#foot #fcol2 #ipad p a {
+  text-indent: 0;
+  float: none;
+  margin-left: 0;
+  color: #fff;
+  text-decoration: none;
+}
+#foot #fcol2 #ipad p a:hover {
+  text-decoration: underline;
+}
 #foot #fcol3 {
   float: right;
   width: 371px;

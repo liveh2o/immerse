@@ -34,7 +34,7 @@
 			
 			<div id="ipad">
 				<h5>Immerse on your iPad</h5>
-				<p>Download the free Zino app for your iPad and search Immerse Journal</p>
+				<p><a href="http://itunes.apple.com/us/app/zinio-magazine-newsstand-reader/id364297166?mt=8&uo=4" target="itunes_store">Download the free Zinio app</a> for your iPad and search Immerse Journal</p>
 			</div>
 		</div>
 		
