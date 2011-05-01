@@ -344,9 +344,8 @@ hgroup#subscribe-title h3.subtitle {
   font-size: 13px;
   color: #687466;
   text-transform: uppercase;
-  padding: 0 0 0 29px;
 }
-#page #entry-social span.es1 a.tweet-page { background: url(img/ss1.jpg) top left no-repeat; }
+#page #entry-social span.es1 a.tweet-page { }
 #page #entry-social img.es2 { height: 24px; width: 23px; }
 #page #entry-social a.es3 { background: url(img/ss3.jpg) top left no-repeat; }
 #page #entry-head {
@@ -380,6 +379,7 @@ hgroup#subscribe-title h3.subtitle {
 #page .entry.subscribe div#subscribe-links p {
   display: inline;
   margin-right: 30px;
+  float: left;
 }
 #extra {
   position: relative;
@@ -491,8 +491,9 @@ hgroup#subscribe-title h3.subtitle {
   border-left: 2px solid #dee0db;
 }
 #article-head a.al1 { background: url(img/past.jpg) 10px center no-repeat; }
-#article-head div.al2 { float: right; width: 24px; height: 30px; border-left: 2px solid #DEE0DB; padding: 7px 0 0 30px; }
-#article-head span.al3 a.tweet-this { background: url(img/tweet.jpg) 10px center no-repeat; }
+#article-head span.al2 { float: right; width: 90px; height: 29px; border-left: 2px solid #DEE0DB; padding: 7px 0 0 30px; }
+#article-head span.al3 { float: right; width: 90px; height: 29px; }
+#article-head span.al3 a.tweet-this { padding: 10px 30px; height: 18px;}
 #article-head a:hover { opacity: 0.6; }
 #article {
   position: relative;

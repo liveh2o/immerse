@@ -41,10 +41,11 @@ get_header(); ?>
         <?php the_author(); ?>
     </span>
     <a href="#" class="al1">Past Articles</a>
-    <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:29px; float:right; padding:8px 0 0 5px;"></iframe>
-    <div class="al2"><img src="/wp-content/themes/theme/img/like.jpg"></div>
-    <span class="al3"><?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', 'Tweet This',
-        'Tweet This [URL]', 'noicon', 'tweet-this',
+    <span class="al2">
+    <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:20px; float:right; padding:0 0 0 5px;"></iframe>
+    </span>
+    <span class="al3"><?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', '[BLANK]',
+        'Tweet This [URL]', 'de/twitter/tt-twitter-micro3.png', 'tweet-this',
         'tt', 'Post to Twitter'); ?>
     </span>
 </section>
