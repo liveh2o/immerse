@@ -9,7 +9,7 @@ get_header(); ?>
 		
 <?php include_once 'section-menu.php'; ?>
 		
-<hgroup id="subscribe-title">		
+<hgroup class="page-title-group">		
 <h2 class="page-title"><?php the_title(); ?></h2>
 <h3 class="subtitle">This is the definitive publication for adults who work in ministry with middle school, high school, or college students in the church or parachurch. Don't miss another issue.</h3>
 </hgroup>

@@ -304,25 +304,27 @@ bottom: -20px;
   width: 792px;
   margin: auto;
 }
-hgroup#subscribe-title {
+hgroup.page-title-group {
   width: 792px;
   padding: 25px 0 20px 0;
   margin: auto;
   text-align: left;
 }
-hgroup#subscribe-title h2.page-title {
+hgroup.page-title-group h2.page-title {
  width: auto;
- padding: 0;
+ padding: 0 15px 0 0;
  margin: 0;
  display: inline;
+ border-right: 2px solid #0D4548;
 }
-hgroup#subscribe-title h3.subtitle {
+hgroup.page-title-group h3.subtitle {
  display: inline-block;
  width: 495px;
  font-weight: bold;
  margin-left: 15px;
- padding-left: 15px;
- border-left: 2px solid #0D4548;
+ float: right;
+ height: 30px;
+ position: absolute;
 }
 #page {
   position: relative;
