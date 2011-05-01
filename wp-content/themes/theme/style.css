@@ -811,7 +811,7 @@ div.ad_wrapper {
   float: none;
   margin-left: 0;
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 #foot #fcol2 #ipad p a:hover {
   text-decoration: underline;
