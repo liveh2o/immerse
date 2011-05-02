@@ -385,7 +385,9 @@ hgroup.page-title-group h3.subtitle {
   float: left;
 }
 #page.search {
+  margin-bottom:10px;
   padding:15px;
+  width: 762px;
 }
 #page.search h3 {
   font-size:1.05em;
