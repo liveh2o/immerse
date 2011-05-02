@@ -384,6 +384,18 @@ hgroup.page-title-group h3.subtitle {
   margin-right: 30px;
   float: left;
 }
+#page.search {
+  padding:15px;
+}
+#page.search h3 {
+  font-size:1.05em;
+  margin-bottom:15px;
+  text-transform: uppercase;
+}
+#page.search .entry {
+  margin:15px 0;
+  padding:0;
+}
 #extra {
   position: relative;
   padding: 20px 0;

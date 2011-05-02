@@ -4,48 +4,25 @@
  * @subpackage Theme
  */
 
-get_header(); ?>
+get_header();
 		
-<?php include_once 'section-menu.php'; ?>
-		
-		
-<h2 class="page-title">Immerse : Search Results</h2>
+include_once 'section-menu.php';
+query_posts($query_string . '&numberposts=-1'); ?>
 
+<h2 class="page-title">Search Results</h2>
+<section id="page" class="section search">
+    <h3><?php echo $wp_query->found_posts; ?> results for "<?php the_search_query() ?>"</h3>
 
-
-<section id="page" class="section">
-
-	
-	
-	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
-	
-			
 	<div class="entry is-post" id="post-<?php the_ID(); ?>">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-		<p>by <strong><?php the_author() ?></strong> on <strong><?php the_time('F jS, Y') ?></strong> -- filed under <strong><?php the_category(', ') ?></strong></p>
-			
-		<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+		<p><?php the_excerpt(); ?></p>
+        <?php if (get_the_category()) { ?>
+        <p><em>From <?php the_category(' '); ?></em></p>
+        <?php } ?>
 	</div>
-	
-	
 	<?php endwhile; ?>
 
-	<div class="navigation search">
-		<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-		<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-	</div>
-
-	<?php else : ?>
-
-	<h2 class="center">Not Found</h2>
-	<p class="center">Sorry, but you are looking for something that isn't here.</p>
-	<?php get_search_form(); ?>
-
-	<?php endif; ?>
-	
-	
-	
 </section>	
 
 <?php get_footer(); ?>
