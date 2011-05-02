@@ -48,7 +48,7 @@ if($ip != "174.126.90.246"){
 <header id="head">
 	<div id="header">
 		<h1><a href="<?php bloginfo('url'); ?>">Immerse | A Journal of Faith, Life, and Youth Ministry</a></h1>
-		<form action="<?php bloginfo('url'); ?>/" method="post">
+		<form action="<?php bloginfo('url'); ?>/">
 			<p><input type="text" class="text" value="" name="s" />
 			<input type="submit" class="submit" value="go" /></p>			
 		</form>

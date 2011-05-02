@@ -25,9 +25,9 @@
 				<li><a href="#" class="fs5">Flickr</a></li>
 			</ul>
 			
-			<form action="/" method="post">
+			<form action="<?php bloginfo('url'); ?>/">
 				<p>
-					<input type="text" class="text" value="" />
+					<input type="text" class="text" value="" name="s" />
 					<input type="submit" class="submit" value="Go" />
 				</p>
 			</form>
