@@ -334,8 +334,7 @@ hgroup.page-title-group h3.subtitle {
 }
 #page #entry-social {
   position: absolute;
-  width: 200px;
-  right: -208px;
+  right: -90px;
   top: 0;
   text-align: left;
 }
@@ -777,7 +776,7 @@ div.ad_wrapper {
 #foot #fcol2 li { float: left; }
 #foot #fcol2 a {
   float: left;
-  margin-left: 16px;
+  margin:0 12px 0 16px;
   width: 32px;
   height: 33px;
   text-indent: -9999em;
@@ -948,4 +947,8 @@ div.ad_wrapper {
 #supplements li strong {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.tubepress_normal_embedded_wrapper {
+  margin: 0 263px 0 0 !important;
 }
