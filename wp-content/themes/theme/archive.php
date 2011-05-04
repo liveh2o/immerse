@@ -57,8 +57,4 @@ get_header(); ?>
 	
 </section>
 
-
-<?php include_once 'the-board.php'; ?>		
-	
-
 <?php get_footer(); ?>

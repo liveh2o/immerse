@@ -37,6 +37,6 @@ include_once 'section-menu.php';
       endif; ?>
 </section>
 <?php
-include_once 'the-team.php';
+include_once 'the-board.php';
 get_footer();
 ?>
