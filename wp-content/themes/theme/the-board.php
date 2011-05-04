@@ -8,14 +8,7 @@
 				<?php the_post_thumbnail('type4'); ?>
 			<?php };?>
 			<h5><?php the_title(); ?></h5>
-			
-			<?php $profession = get_post_meta($post->ID, 'profession', $single = true); ?>
-			<?php $employer = get_post_meta($post->ID, 'employer', $single = true); ?>
-			<?php $location = get_post_meta($post->ID, 'location', $single = true); ?>
-			
-			<p><?php echo $profession; ?></p>
-			<p><?php echo $employer; ?></p>
-			<p><?php echo $location; ?></p>
+			<p><?php the_content(); ?></p>
 		</li>
 		<?php endwhile; ?>
 	</ul>
