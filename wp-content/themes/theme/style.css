@@ -119,6 +119,7 @@ body {
   border-bottom: 1px solid #333333;
 }
 #header #nav li { float: left; }
+/*
 #header #nav a {
   float: left;
   text-transform: uppercase;
@@ -128,6 +129,16 @@ body {
   height: 39px;
   line-height: 39px;
   font-size: 12px;
+  text-decoration: none;
+} */
+#header #nav a {
+  float: left;
+  text-transform: uppercase;
+  padding: 1px 9px 0 9px;
+  color: #333333;
+  height: 39px;
+  line-height: 39px;
+  font-size: 13px;
   text-decoration: none;
 }
 #header #nav a:hover { background: rgba(122, 133, 53, 0.33); }
@@ -896,6 +907,7 @@ div.ad_wrapper {
   width: 792px;
   margin: auto;
 }
+/*
 #foot-nav li {
   display: inline;
   padding: 0 5px;
@@ -903,6 +915,18 @@ div.ad_wrapper {
 #foot-nav a {
   display: inline;
   color: #ffffff;
+  font-weight: bold;
+}
+*/
+#foot-nav li {
+  display: inline;
+  line-height: 26px;
+  padding: 0 8px;
+}
+#foot-nav a {
+  display: inline;
+  color: #ffffff;
+  font-size:14px;
   font-weight: bold;
 }
 #supplements {

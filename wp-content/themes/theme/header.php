@@ -17,7 +17,6 @@ if($ip != "174.126.90.246"){
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/plugins/tubepress/content/themes/immerse/style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
     <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -26,6 +25,7 @@ if($ip != "174.126.90.246"){
       wp_head();
     ?>
 <!-- site JS -->
+<script type="text/javascript" src="http://fast.fonts.com/jsapi/71022b32-7d25-434b-a7f2-a581c625132a.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
