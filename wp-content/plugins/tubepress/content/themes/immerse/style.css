@@ -1,5 +1,5 @@
-div.tubepress_normal_embedded_wrapper {
-	margin: 0;
+.tubepress_normal_embedded_wrapper {
+  margin: 0 263px 0 0 !important;
 }
 
 .tubepress_thumbnail_area {
@@ -9,3 +9,4 @@ div.tubepress_normal_embedded_wrapper {
 .tubepress_thumb {
 	height: 160px;
 }
+
