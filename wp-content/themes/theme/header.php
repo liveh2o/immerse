@@ -58,6 +58,7 @@ if($ip != "174.126.90.246"){
 			<li><a href="http://twitter.com/immersejournal" class="social2">Twitter</a></li>
 			<li><a href="http://www.youtube.com/immersejournal" class="social3">YouTube</a></li>
 			<li><a href="http://www.facebook.com/#!/profile.php?id=100002211903019" class="social4">Facebook</a></li>
+			<li><a href="http://vimeo.com/channels/181320" class="social5">Vimeo</a></li>
 		</ul>
 		<div id="nav">
 			<?php wp_nav_menu( array('menu' => 'Main Menu' )); ?>

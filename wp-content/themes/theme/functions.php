@@ -34,6 +34,14 @@ function latest_articles() {
   }
 }
 
+function the_styles() {
+  $template_url = get_bloginfo('template_directory');
+  wp_enqueue_style('styles', $template_url . '/reset.css');
+  wp_enqueue_style('styles', $template_url . '/styles.css');
+  wp_enqueue_style('styles', WP_PLUGIN_URL . '/tubepress/content/themes/styles.css');
+}
+//add_action( 'wp_print_styles', 'the_styles' );
+
 function register_my_menus() {
 	register_nav_menus(
 		array(

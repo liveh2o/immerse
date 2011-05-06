@@ -109,6 +109,7 @@ body {
 #header #social a.social2 { background: url(img/s2.jpg) top left no-repeat; }
 #header #social a.social3 { background: url(img/s3.jpg) top left no-repeat; }
 #header #social a.social4 { background: url(img/s4.jpg) top left no-repeat; }
+#header #social a.social5 { background: url(img/vimeo-header.jpg) top left no-repeat; }
 #header #nav {
   position: absolute;
   bottom: 18px;
@@ -345,7 +346,7 @@ hgroup.page-title-group h3.subtitle {
 }
 #page #entry-social {
   position: absolute;
-  right: -90px;
+  right: -75px;
   top: 0;
   text-align: left;
 }
@@ -787,7 +788,7 @@ div.ad_wrapper {
 #foot #fcol2 li { float: left; }
 #foot #fcol2 a {
   float: left;
-  margin:0 12px 0 16px;
+  margin:0 0 0 16px;
   width: 32px;
   height: 33px;
   text-indent: -9999em;
@@ -796,7 +797,7 @@ div.ad_wrapper {
 #foot #fcol2 .fs2 { background: url(img/fs2.jpg) top left; }
 #foot #fcol2 .fs3 { background: url(img/fs3.jpg) top left; }
 #foot #fcol2 .fs4 { background: url(img/fs4.jpg) top left; }
-#foot #fcol2 .fs5 { background: url(img/fs5.jpg) top left; }
+#foot #fcol2 .fs5 { background: url(img/vimeo-footer.png) top left; }
 #foot #fcol2 form {
   position: relative;
   overflow: hidden;
@@ -946,16 +947,24 @@ div.ad_wrapper {
   color: #000000;
   text-align: left;
 }
-#supplements li a.download-this {
-  position: absolute;
-  bottom: 18px;
-  right: 0;
-  height: 20px;
-  line-height: 20px;
-  color: #2e2e2e;
-  text-transform: uppercase;
-  padding-right: 26px;
-  background: url(img/download.jpg) center right no-repeat;
+#supplements .sup-content {
+  float:left;
+  overflow:hidden;
+  width:392px;
+}
+#supplements ol {
+  list-style:decimal outside !important;
+  overflow:visible !important;
+  padding-left:20px;
+}
+#supplements ol li {
+  border:none;
+  margin:5px 0;
+  overflow:visible !important;
+  padding:0;
+}
+#supplements li a {
+  color: #0d4447;
 }
 #supplements li .sup-feature {
   float: left;
@@ -966,6 +975,7 @@ div.ad_wrapper {
 #supplements li h3 {
   font-size: 16px;
   font-weight: bold;
+  margin-bottom:15px;
   text-transform: uppercase;
 }
 #supplements li strong {

@@ -15,10 +15,15 @@ get_header(); ?>
 
 <section id="page" class="section">
 	<ul id="entry-social">
-		<li><a href="#" class="es1">Tweet This</a></li>
-		<li><a href="#" class="es2">Like This</a></li>
-		<li><a href="#" class="es3">Share This</a></li>		
-	</ul>
+        <li><span class="es1">
+        <?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', '[BLANK]',
+        'Tweet This [URL]', '', 'tweet-page',
+        'tt', 'Post to Twitter'); ?>
+        </span></li>
+        <li>
+        <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:29px; position: absolute;"></iframe>
+        </li>
+    </ul>
 
 	<div id="entry-head">
 		<img src="<?php bloginfo('template_directory'); ?>/img/blog-head.jpg" alt="" />

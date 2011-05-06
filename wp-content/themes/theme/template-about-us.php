@@ -12,7 +12,7 @@ include_once 'section-menu.php';
     <ul id="entry-social">
         <li><span class="es1">
         <?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', '[BLANK]',
-        'Tweet This [URL]', 'de/twitter/tt-twitter-micro3.png', 'tweet-page',
+        'Tweet This [URL]', '', 'tweet-page',
         'tt', 'Post to Twitter'); ?>
         </span></li>
         <li>

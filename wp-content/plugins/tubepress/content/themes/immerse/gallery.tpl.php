@@ -26,7 +26,6 @@
 <div class="tubepress_container" id="tubepress_gallery_<?php echo ${org_tubepress_api_const_template_Variable::GALLERY_ID}; ?>">
 
   <?php echo ${org_tubepress_api_const_template_Variable::PLAYER_HTML}; ?>
-  <hr />
   <div id="tubepress_gallery_<?php echo ${org_tubepress_api_const_template_Variable::GALLERY_ID}; ?>_thumbnail_area" class="tubepress_thumbnail_area">
   
     <?php if (isset(${org_tubepress_api_const_template_Variable::PAGINATION_TOP})) : echo ${org_tubepress_api_const_template_Variable::PAGINATION_TOP}; endif; ?>
@@ -117,7 +116,6 @@
       <?php endforeach; ?>
     
     </div>
-    <hr />
     <?php if (isset(${org_tubepress_api_const_template_Variable::PAGINATION_BOTTOM})) : echo ${org_tubepress_api_const_template_Variable::PAGINATION_BOTTOM}; endif; ?>
   </div>
 

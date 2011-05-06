@@ -1,12 +1,46 @@
+.tubepress_container div {
+  float: left;
+}
+
 .tubepress_normal_embedded_wrapper {
-  margin: 0 263px 0 0 !important;
+  width: 757px !important;
+}
+
+.tubepress_container div.tubepress_embedded_title {
+  float: right;
+  padding-right: 35px;
+  width: 290px;
 }
 
 .tubepress_thumbnail_area {
-	margin-top: 2em;
+	width: 757px;
+}
+
+.tubepress_thumbs {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 150px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .tubepress_thumb {
 	height: 160px;
+	margin-right: 25px;
 }
 
+.tubepress_container div.pagination {
+	width: 100%;
+}
+
+div.pagination a {
+	color: #666 !important;	
+}
+
+div.pagination a:hover {
+	background-color: #ddd !important;
+}
+
+div.pagination span.current {
+	color: #0D4548 !important;
+}

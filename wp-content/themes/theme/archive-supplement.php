@@ -39,13 +39,10 @@ get_header(); ?>
 			
 			<?php };?>	
 			
-			<h3><?php the_title(); ?></h3>
-			<p><strong>By <?php the_author(); ?></strong></p>
-			
-			<?php $d_link = get_post_meta($post->ID, 'download_link', $single = true); ?>			
-			<?php if($d_link != ""){?>
-			<a href="<?php echo $d_link; ?>" class="download-this">Download a PDF</a>
-			<?php }; ?>
+            <div class="sup-content">
+			    <h3><?php the_title(); ?></h3>
+                <?php the_content(); ?>
+            </div>
 		</li>
 
 	<?php endwhile; ?>

@@ -22,6 +22,7 @@
 				<li><a href="http://twitter.com/immersejournal" class="fs2">Twitter</a></li>
 				<li><a href="http://www.youtube.com/immersejournal" class="fs3">YouTube</a></li>
 				<li><a href="http://www.facebook.com/#!/profile.php?id=100002211903019" class="fs4">Facebook</a></li>
+				<li><a href="http://vimeo.com/channels/181320" class="fs5">Vimeo</a></li>
 			</ul>
 			
 			<form action="<?php bloginfo('url'); ?>/">
