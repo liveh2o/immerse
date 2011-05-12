@@ -118,6 +118,7 @@ body {
   height: 39px;
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333;
+  font-family:'Trade Gothic W01 Cn 18';
 }
 #header #nav li { float: left; }
 /*
@@ -907,6 +908,7 @@ div.ad_wrapper {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   width: 792px;
   margin: auto;
+  font-family:'Trade Gothic W01 Bold Cn 20';
 }
 #foot-nav li {
   display: inline;
@@ -917,7 +919,6 @@ div.ad_wrapper {
   display: inline;
   color: #ffffff;
   font-size:14px;
-  font-weight: bold;
 }
 #supplements {
   position: relative;
@@ -1014,6 +1015,7 @@ div.widget_tag_cloud h4 {
 .widget_search #searchform input#s {
   background: url(img/search-bg.png) top left no-repeat;
   border: none;
+  padding-left: 5px;
   height: 25px;
   width: 155px;
 }

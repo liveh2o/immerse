@@ -14,6 +14,7 @@ if($ip != "174.126.90.246"){
 <head profile="http://gmpg.org/xfn/11">
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <link href="http://fast.fonts.com/cssapi/b8fad648-7a3f-46ef-92b7-f64df702090c.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/reset.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php bloginfo('url'); ?>/wp-content/plugins/tubepress/content/themes/immerse/style.css" type="text/css" media="screen" />
@@ -25,7 +26,6 @@ if($ip != "174.126.90.246"){
       wp_head();
     ?>
 <!-- site JS -->
-<script type="text/javascript" src="http://fast.fonts.com/jsapi/71022b32-7d25-434b-a7f2-a581c625132a.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
