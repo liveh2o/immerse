@@ -908,17 +908,6 @@ div.ad_wrapper {
   width: 792px;
   margin: auto;
 }
-/*
-#foot-nav li {
-  display: inline;
-  padding: 0 5px;
-}
-#foot-nav a {
-  display: inline;
-  color: #ffffff;
-  font-weight: bold;
-}
-*/
 #foot-nav li {
   display: inline;
   line-height: 26px;
@@ -981,4 +970,65 @@ div.ad_wrapper {
 #supplements li strong {
   font-weight: bold;
   text-transform: uppercase;
+}
+#page.archive-wrapper {
+  margin-bottom: 10px;
+}
+#page .entry.is-post.blog-archive {
+  padding: 52px 20px;
+  float: left;
+  border-bottom: none;
+  width: 552px;
+}
+#page #entry-wrapper {
+  overflow: hidden;
+} 
+#entry-wrapper #blog-sidebar {
+  float: left;
+  width: 180px;
+  padding: 52px 20px 52px 0;
+}
+#entry-wrapper #below-blog {
+  clear: both;
+  padding: 0 0 0 10px;
+}
+div.widget_tag_cloud div.tagcloud {
+  padding: 10px 30px 0 20px;
+}
+div.widget_tag_cloud div.tagcloud a {
+  color: #b3bdbf;
+}
+div.widget_tag_cloud h4 {
+  background: url(img/tags-title.png) top left no-repeat;
+  height: 36px;
+  text-indent: -3000px;
+}
+.widget_search .screen-reader-text {
+  display: none;
+}
+.widget_search {
+	position:relative;
+	height:60px;
+	width:180px;
+}
+.widget_search #searchform input#s {
+  background: url(img/search-bg.png) top left no-repeat;
+  border: none;
+  height: 25px;
+  width: 155px;
+}
+.widget_search #searchsubmit {
+  background: url(img/search-button.png) top left no-repeat;
+  border: none;
+  float: right;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  left: 155px;
+  text-indent: -9999em;
+}
+.widget_search #searchsubmit:hover {
+  background: url(img/search-button-hover.png) top left no-repeat;
+  border: none;
 }

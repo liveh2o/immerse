@@ -71,4 +71,26 @@ add_image_size( 'type3', 113, 134, true );
 add_image_size( 'type4', 90, 119, true );
 add_image_size( 'slider', 582, 291, true ); 
 
+if (function_exists('register_sidebar')) {
+
+	register_sidebar(array(
+		'name' => 'Blog Sidebar',
+		'id'   => 'blog_sidebar',
+		'description'   => 'This is the widgetized sidebar.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+	register_sidebar(array(
+		'name' => 'Below Blog',
+		'id'   => 'below_blog',
+		'description'   => 'This is the widgetized sidebar.',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4>',
+		'after_title'   => '</h4>'
+	));
+}
+
 ?>
