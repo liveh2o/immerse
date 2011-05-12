@@ -121,18 +121,6 @@ body {
   font-family:'Trade Gothic W01 Cn 18';
 }
 #header #nav li { float: left; }
-/*
-#header #nav a {
-  float: left;
-  text-transform: uppercase;
-  letter-spacing: -0.1em;
-  padding: 1px 5px 0 5px;
-  color: #333333;
-  height: 39px;
-  line-height: 39px;
-  font-size: 12px;
-  text-decoration: none;
-} */
 #header #nav a {
   float: left;
   text-transform: uppercase;
@@ -148,10 +136,6 @@ body {
   margin: auto;
   text-align: left;
   width: 792px;
-}
-#barefoot-logo {
-  position: fixed;
-  margin: 150px 0 0 -75px;
 }
 #section-menu {
   position: relative;

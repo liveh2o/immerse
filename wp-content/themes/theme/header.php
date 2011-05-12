@@ -66,4 +66,3 @@ if($ip != "174.126.90.246"){
 	</div>
 </header><!-- e: head -->
 <div id="wrap" class="wrap">
-  <img src="<?php bloginfo('template_directory'); ?>/img/barefoot-logo.png" alt="Barefoot Ministries" id="barefoot-logo" />
