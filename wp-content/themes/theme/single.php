@@ -73,7 +73,16 @@ get_header(); ?>
 
 
 <section id="ads2" class="section">
-    <a href="#" class="ads2"></a>
+    <?php
+    $category_id = the_category_ID(false);
+	if($category_id == '17') { echo adrotate_group('4'); } 
+	elseif($category_id == '49') { echo adrotate_group('6'); }
+	elseif($category_id == '45') { echo adrotate_group('8'); }
+	elseif($category_id == '50') { echo adrotate_group('10'); }
+	elseif($category_id == '42') { echo adrotate_group('12'); }
+	elseif($category_id == '47') { echo adrotate_group('14'); }
+	else { echo adrotate_ad('9'); }
+	?>
 </section>
 
 <section id="comments" class="section">

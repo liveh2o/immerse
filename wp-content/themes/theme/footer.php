@@ -5,7 +5,16 @@
  */
 ?>
 <section id="ads1" class="section">
-	<?php echo adrotate_block(2); ?>
+	<?php
+    $category_id = the_category_ID(false);
+	if($category_id == '17') { echo adrotate_group('5'); } 
+	elseif($category_id == '49') { echo adrotate_group('7'); }
+	elseif($category_id == '45') { echo adrotate_group('9'); }
+	elseif($category_id == '50') { echo adrotate_group('11'); }
+	elseif($category_id == '42') { echo adrotate_group('13'); }
+	elseif($category_id == '47') { echo adrotate_group('15'); }
+	else { echo adrotate_block('2'); }
+	?>
 </section>
 </div>
 <footer id="footer">
