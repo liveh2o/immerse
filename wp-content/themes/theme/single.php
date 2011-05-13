@@ -45,7 +45,7 @@ get_header(); ?>
     <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:20px; float:right; padding:0 0 0 5px;"></iframe>
     </span>
     <span class="al3"><?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', '[BLANK]',
-        'Tweet This [URL]', 'de/twitter/tt-twitter-micro3.png', 'tweet-this',
+        'Tweet This [URL]', '', 'tweet-this',
         'tt', 'Post to Twitter'); ?>
     </span>
 </section>
@@ -85,10 +85,6 @@ get_header(); ?>
     
 <?php endwhile; ?>
 
-<div class="navigation">
-    <div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-    <div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-</div>
 
 <?php else : ?>
 
