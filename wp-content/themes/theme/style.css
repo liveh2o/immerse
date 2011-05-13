@@ -382,6 +382,10 @@ hgroup.page-title-group h3.subtitle {
   margin-right: 30px;
   float: left;
 }
+#page .entry.subscribe h3 {
+  font-size:1.1em;
+  font-weight:bold;
+}
 #page.search {
   margin-bottom:10px;
   padding:15px;
