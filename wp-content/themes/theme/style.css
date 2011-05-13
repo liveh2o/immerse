@@ -506,7 +506,7 @@ hgroup.page-title-group h3.subtitle {
 #article-head a.al1 { background: url(img/past.jpg) 10px center no-repeat; }
 #article-head span.al2 { float: right; width: 90px; height: 29px; border-left: 2px solid #DEE0DB; padding: 7px 0 0 30px; }
 #article-head span.al3 { float: right; width: 90px; height: 29px; }
-#article-head span.al3 a.tweet-this { padding: 10px 30px; height: 18px;}
+#article-head span.al3 a.tweet-this { padding: 7px 30px; height: 24px;}
 #article-head a:hover { opacity: 0.6; }
 #article {
   position: relative;
