@@ -250,7 +250,9 @@ body {
   border:0;
   display:block; 
 }
-
+.nivo-caption {
+  display:none !important;
+}
 #slider .nivo-controlNav {
 position: absolute;
 right: 0;
