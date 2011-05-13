@@ -23,14 +23,13 @@ function get_sections() {
 function latest_articles() {
   foreach (get_sections() as $section) {
     query_posts('category_name='.$section); 
-    if (have_posts()) {
-      the_post();
-      $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'slider' );
-      if ($thumb) {
-        echo "<a href=\"" . get_permalink() . "\"><img src=\"{$thumb[0]}\" /></a>";
+    if (have_posts()) : the_post();
+      if (class_exists('MultiPostThumbnails')
+        && MultiPostThumbnails::has_post_thumbnail('post', 'secondary-image')) {
+        echo "<a href=\"" . get_permalink() . "\">". MultiPostThumbnails::get_the_post_thumbnail('post', 'secondary-image', NULL, 'fullsize') ."</a>";
       }
-      $thumb = null;
-    } 
+      $url = null;
+    endif;
   }
 }
 
@@ -70,6 +69,14 @@ add_image_size( 'type2', 272, 171, true );
 add_image_size( 'type3', 113, 134, true ); 
 add_image_size( 'type4', 90, 119, true );
 add_image_size( 'slider', 582, 291, true ); 
+
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(array(
+    'label' => 'Homepage Image',
+    'id' => 'secondary-image',
+    'post_type' => 'post'
+    ));
+}
 
 if (function_exists('register_sidebar')) {
 
