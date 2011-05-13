@@ -382,6 +382,28 @@ hgroup.page-title-group h3.subtitle {
   margin-right: 30px;
   float: left;
 }
+#page .subscribe h2 {
+  margin:20px 0;
+}
+#page .subscribe form div.field {
+  margin:10px;
+}
+#page .subscribe form div.field br {
+  display:none;
+}
+#page .subscribe form div.field label {
+  display:inline-block;
+  width:40px;
+}
+#page .subscribe form div.field input {
+  border:1px solid #777;
+  font-size:1.2em;
+  padding:5px;
+  width:250px;
+}
+#email-submit {
+  margin-left:50px;
+}
 #page .entry.subscribe h3 {
   font-size:1.1em;
   font-weight:bold;
