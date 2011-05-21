@@ -9,7 +9,7 @@ get_header(); ?>
 <?php include_once 'section-menu.php'; ?>
 		
 		
-<h2 class="page-title">Immerse Blog Post Archive</h2>
+<h2 class="page-title">Immerse Blog</h2>
 
 
 
