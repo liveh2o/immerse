@@ -26,13 +26,20 @@ get_header(); ?>
     <a href="#" id="go-twitter">Twitter</a>
 </section><!-- e: twitter -->
 
-<div id="sections" class="section">
-    <ul>
-        <li><a href="#" class="s1">Immerse Blog</a></li>
-        <li><a href="#" class="s2">Barefoot Training Blog</a></li>
-        <li><a href="#" class="s3">Slant thirty-three</a></li>
-        <li><a href="#" class="s4">Video Blog</a></li>
-    </ul>
-</div><!-- e: sections -->
+<section id="blog" class="section">
+    <article id="latest">
+        <h2>The Latest from the Blog</h2>
+    <?php query_posts('post_type=immerseblog'); ?>
+  	<?php if (have_posts()) : the_post(); ?>
+    		<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+        <a href="<?php the_permalink(); ?>" class="more">Continue Reading <span>▶</span></a>
+  	<?php endif; ?>
+    </article>
+    <aside id="ads5">
+        <a href="#">
+          <img src="<?php bloginfo('template_directory'); ?>/img/sb2.jpg" />
+        </a>
+    </aside>
+</section><!-- e: blog -->
 
 <?php get_footer(); ?>

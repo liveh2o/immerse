@@ -707,33 +707,53 @@ div.ad_wrapper {
 #twitter a, #twitter a:visited {
   color:#5b898c;
 }
-#sections {
+
+#blog {
+  margin-bottom:12px;
+  overflow:hidden;
+}
+#blog article {
+  background: #fff;
+  color: #254E4A;
+  float:left;
+  height:244px;
+  margin-right:9px;
   position: relative;
-  overflow: hidden;
-  padding-bottom: 12px;
-  width: 792px;
-  margin: auto;
+  padding:16px;
+  width: 558px;
 }
-#sections ul {
-  overflow: hidden;
-  width: 105%;
+#blog article h2 {
+  border-bottom:1px solid #4A8B8D;
+  color:#4A8B8D;
+  font-size:1.5em;
+  font-weight:bold;
+  padding-bottom:8px;
+  text-transform:uppercase;
 }
-#sections li {
-  float: left;
-  padding-right: 7px;
+#blog article p {
+  font-size:1.16em;
+  line-height:1.5em;
+  margin:10px 0;
 }
-#sections a {
-  float: left;
+#blog aside {
+  float:left;
   height: 260px;
   width: 177px;
-  text-indent: -9999em;
-  border: 8px solid #ffffff;
+  border: 8px solid #fff;
 }
-#sections a:hover { opacity: 0.6; }
-#sections .s1 { background: url(img/sb1.jpg) top left; }
-#sections .s2 { background: url(img/sb2.jpg) top left; }
-#sections .s3 { background: url(img/sb3.jpg) top left; }
-#sections .s4 { background: url(img/sb4.jpg) top left; }
+
+a.more {
+  color:#254E4A;
+  font-size:1.2em !important;
+  font-weight:bold;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+a.more span {
+  color:#bcd4d3;;
+  font-size:.8em;
+}
+
 #ads1 {
   position: relative;
   padding-bottom: 35px;
