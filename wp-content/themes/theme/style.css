@@ -1066,3 +1066,42 @@ div.widget_tag_cloud h4 {
   background: url(img/search-button-hover.png) top left no-repeat;
   border: none;
 }
+
+
+.ui-dialog {
+  background:#333;
+  color:#fff;
+  opacity:.8;
+  padding-top:15px;
+}
+.ui-dialog-titlebar {
+  font-size:1.5em;
+  margin:0 15px;
+  text-align:left;
+  text-transform:uppercase;
+}
+.ui-dialog-titlebar-close {
+  border: 1px solid #fff;
+  color:#fff;
+  display:block;
+  padding:3px;
+  position:absolute;
+    right:5px;
+    top:5px;
+}
+.ui-dialog-titlebar-close:hover {
+  text-decoration:none;
+}
+
+#past-articles-popup {
+  overflow:hidden;
+  padding:10px;
+}
+#past-articles-popup li {
+  float:left;
+  margin:5px;
+  width:190px;
+}
+#past-articles-popup li img {
+  float:left;
+}

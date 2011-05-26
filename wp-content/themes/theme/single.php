@@ -40,7 +40,7 @@ get_header(); ?>
     <span class="author">
         <?php the_author(); ?>
     </span>
-    <a href="#" class="al1">Past Articles</a>
+    <a href="#" class="al1" id="past-articles">Past Articles</a>
     <span class="al2">
     <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:20px; float:right; padding:0 0 0 5px;"></iframe>
     </span>
@@ -50,7 +50,39 @@ get_header(); ?>
     </span>
 </section>
 
-
+<div id="past-articles-popup" title="Past Story Articles">
+  <ul>
+    <li>
+      <img src="/immerse/wp-content/uploads/past1.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+    <li>
+      <img src="/immerse/wp-content/uploads/past2.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+    <li>
+      <img src="/immerse/wp-content/uploads/past3.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+    <li>
+      <img src="/immerse/wp-content/uploads/past4.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+    <li>
+      <img src="/immerse/wp-content/uploads/past5.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+    <li>
+      <img src="/immerse/wp-content/uploads/past6.png" />
+      <h4>Going Deeper With: Christy Lang’s Communities of Disciples</h4>
+      <cite>Alan Johnson<br/>May 25, 2011</cite>
+    </li>
+</div>
 
 <section id="article" class="section">
     <div id="page-window">
