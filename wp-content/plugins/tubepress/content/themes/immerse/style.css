@@ -2,7 +2,7 @@
   float: left;
 }
 
-.tubepress_normal_embedded_wrapper {
+#wrap.wrap #page.section .tubepress_normal_embedded_wrapper {
   width: 757px !important;
 }
 
