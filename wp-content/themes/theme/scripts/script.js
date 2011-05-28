@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$("#"+content_show).fadeIn();
 	});	
 	
-	$( "#past-articles-popup" ).dialog({ width: 620, closeText: 'X', autoOpen: false });
+	$( "#past-articles-popup" ).dialog({ width: 620, closeText: 'X', autoOpen: 'false' });
 	$( "#past-articles" ).click(function(e) {
 	  $( "#past-articles-popup" ).dialog("open");
     e.preventDefault();

@@ -46,6 +46,22 @@ function get_sections() {
   return array('church','arts-and-culture','story','christian-history-and-thought','theology','spiritual-formation');
 }
 
+function past_articles() {
+  $past_articles = new WP_Query('category_name='.uri_segments(1).'&posts_per_page=6'); 
+  if ($past_articles->have_posts()) {
+    $str = '<ul>';
+	  while ($past_articles->have_posts()) {
+	    $past_articles->the_post();
+      $str .= "<li><img src=\"/immerse/wp-content/uploads/past1.png\" />";
+      $str .= "<h4>" . get_the_title() . "</h4>";
+      $str .= "<cite>" . get_the_author() . "<br/>";
+      $str .= get_the_date() . "</cite></li>";
+	  }
+	  $str .= '</ul>';
+    echo $str;
+  }
+}
+
 function latest_articles() {
   foreach (get_sections() as $section) {
     query_posts('category_name='.$section); 
@@ -85,16 +101,10 @@ function redirect_to_post(){
         wp_redirect( $post_url );
     }
 }
-add_action('template_redirect', 'redirect_to_post');
-
+add_action( 'template_redirect', 'redirect_to_post' );
 
 add_theme_support( 'post-thumbnails' );
-set_post_thumbnail_size( 144, 130, true );  
-add_image_size( 'type1', 792, 275, true ); 
-add_image_size( 'type2', 272, 171, true ); 
-add_image_size( 'type3', 113, 134, true ); 
-add_image_size( 'type4', 90, 119, true );
-add_image_size( 'slider', 582, 291, true ); 
+set_post_thumbnail_size( 79, 100, true );
 
 if (class_exists('MultiPostThumbnails')) {
     new MultiPostThumbnails(array(

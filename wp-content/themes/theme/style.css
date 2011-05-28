@@ -1101,6 +1101,13 @@ div.widget_tag_cloud h4 {
   margin:5px;
   width:190px;
 }
+#past-articles-popup li h4 {
+  font-weight:bold;
+}
+#past-articles-popup li cite {
+  margin-top:5px;
+}
 #past-articles-popup li img {
   float:left;
+  margin-right:5px;
 }
