@@ -3,7 +3,7 @@
 Plugin Name:  Twitter Feed for WordPress
 Plugin URI:   http://pleer.co.uk/wordpress/plugins/wp-twitter-feed/
 Description:  A simple Twitter feed that outputs your latest tweets in HTML into any post, page, template or sidebar widget. Customisable and easy to install!
-Version:      1.1.1
+Version:      1.1.2
 Author:       Alex Moss
 Author URI:   http://alex-moss.co.uk/
 Contributors: pleer
@@ -79,6 +79,11 @@ function Twitterfeedreader($atts) {
 	//SETUP FEED
 	include_once(ABSPATH . WPINC . '/feed.php');
 	$rss = fetch_feed($twitter_rss);
+
+	if ( is_wp_error( $rss ) ) {
+		$wholetweet = 'The connection to twitter has returned an error. Please try again later.<br />';
+	} else {
+
 	$maxitems = $rss->get_item_quantity($num);
 	$rss_items = $rss->get_items(0, $maxitems);
 	ob_start();
@@ -204,6 +209,7 @@ function Twitterfeedreader($atts) {
 		}
 		$wholetweet = $wholetweet."".$entry;
 		$imgclass='';
+	}
 	}
 
 
