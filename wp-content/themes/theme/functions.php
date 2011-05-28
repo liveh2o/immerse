@@ -4,6 +4,11 @@
 * @subpackage Theme
 */
 
+function uri_segments($n) {
+	$segments = explode('/', $_SERVER['REQUEST_URI']);
+	return $segments[$n];
+}
+
 function the_vimeo( $post_id, $width = 400, $height = 225, $html_options = '' ) {
   $url = get_post_meta($post_id, 'vimeo_url', true);
   if ( $url ) {
@@ -14,6 +19,27 @@ function the_vimeo( $post_id, $width = 400, $height = 225, $html_options = '' ) 
     $return .= "></iframe>";
     echo $return;
   }
+}
+
+function footer_ad_space() {
+  $ad_map = array(
+    'church' => 5,
+    'arts-and-culture' => 7,
+    'story' => 9,
+    'christian-history-and-thought' => 11,
+    'theology' => 13,
+    'spiritual-formation' => 15,
+    'current-issue' => 16,
+    'about-us' => 17,
+    'supplement' => 18,
+    'immerseblog' => 19,
+    'videoblog' => 20,
+    'subscribe' => 21,
+    'immersemobile' => 22
+  );
+  $slug = uri_segments(1);
+  $group = ($slug == '') ? 2 : $ad_map[$slug];
+  return adrotate_group($group);
 }
 
 function get_sections() {
