@@ -762,10 +762,9 @@ a.more span {
   margin: auto;
 }
 #ads1 a {
-  display: block;
-  height: 148px;
-  background: #ffffff;
+  height: 145px;
 }
+
 #ads2 {
   position: relative;
   padding-bottom: 35px;
@@ -776,8 +775,8 @@ a.more span {
 #ads2 a {
   display: block;
   height: 148px;
-  background: #ffffff;
 }
+
 #ads2 { padding-bottom: 12px; }
 #footer {
   position: relative;
