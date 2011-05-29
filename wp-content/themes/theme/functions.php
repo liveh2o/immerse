@@ -52,10 +52,11 @@ function past_articles() {
     $str = '<ul>';
 	  while ($past_articles->have_posts()) {
 	    $past_articles->the_post();
-      $str .= "<li><img src=\"/immerse/wp-content/uploads/past1.png\" />";
+      $str .= '<li><a href="' . get_permalink() . '" title="' . the_title_attribute() . '">';
+      $str .= get_the_post_thumbnail();
       $str .= "<h4>" . get_the_title() . "</h4>";
       $str .= "<cite>" . get_the_author() . "<br/>";
-      $str .= get_the_date() . "</cite></li>";
+      $str .= get_the_date() . "</cite></a></li>";
 	  }
 	  $str .= '</ul>';
     echo $str;
