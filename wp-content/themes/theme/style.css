@@ -1103,6 +1103,9 @@ div.widget_tag_cloud h4 {
   text-align:left;
   width:190px;
 }
+#past-articles-popup li a, #past-articles-popup li a:visited {
+  color:#fff;
+}
 #past-articles-popup li h4 {
   font-weight:bold;
   margin-bottom:5px;
