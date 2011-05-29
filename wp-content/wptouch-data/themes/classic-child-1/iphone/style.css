@@ -1,0 +1,253 @@
+/* You can place your custom styles here */
+
+#header {
+  background: #fff url(img/header-bg.gif) repeat-x;
+  height: 81px;  
+}
+
+#custom-logo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -96px;
+}
+
+.post {
+  border: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.post.single {
+  padding: 0 15px;
+  width: 220px;
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+.post.single h2 {
+  color: #264850;
+  font-size: 24px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.post.single .date-author-wrap .post-author {
+ color: #264850;
+ letter-spacing: .1em;
+ margin: 10px 0;
+ text-transform: uppercase;
+}
+
+#cat-title {
+  background: #264850;
+  height: auto;
+  left: 0;
+  padding: 10px 0 10px 55px;
+  width: auto;
+}
+
+#cat-title h1 {
+  color: #d6dfdb;
+  font-size: 18px !important;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.post-navigation {
+  background: transparent;
+}
+
+.post-navigation.nav-bottom {
+  border-top: none;
+  margin-bottom: 15px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+}
+
+.post-nav-fwd {border-left: none;}
+
+a.nav-fwd {
+  border-left: none;
+  color: #95b4af;
+  padding-left: 5px;
+  text-indent: -30px;
+  text-transform: uppercase;
+}
+
+.post-nav-back {border-right: none;}
+
+a.nav-back {
+  border-right: none;
+  color: #95b4af;
+  padding-right: 5px;
+  text-indent: 20px;
+  text-transform: uppercase;
+}
+
+.back-to-top {
+  color: #95b4af;
+  text-transform: uppercase;
+}
+
+.post.not-single.not-page {
+  padding: 0 35px;
+  margin: 0 0 15px 0;
+}
+
+a.read-entry {
+  border-bottom: none;
+  margin: 0;
+  -webkit-border-bottom-left-radius: 0
+  -webkit-border-bottom-right-radius: 0
+}
+
+.post.section {
+  padding: 0 15px;
+  width: 220px;
+  position: relative;
+  top: 0;
+  left: 40px;
+}
+
+.post.section.page-title-area {
+  background: #264850;
+  height: auto;
+  left: 0;
+  padding: 10px 0 10px 55px;
+  width: auto;
+}
+
+.post.section.page-title-area h2 {
+  color: #d6dfdb;
+  font-family: Helvetica, Geneva, Arial, sans-serif;
+  font-size: 18px !important;
+  font-weight: normal;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+/* Begin Footer */
+
+#nav-bar {
+  background: url(img/nav-bar-bg.gif) repeat-x;
+  background-position: 50% 0;
+  border-top: 6px solid #213B41;
+  height: 73px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+#nav-bar a {
+  color: #fff;
+  display: block;
+  padding-top: 5px;
+  float: left;
+  height: 39px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+#feature-nav {
+  background: #192f32;
+  padding-bottom: 5px;
+}
+
+#feature-nav-container {
+  position: relative;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+}
+
+#feature-nav h2 {
+  color: #fff;
+  font-weight: normal;
+  line-height: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#feature-nav a {
+  color: #192f32;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 10px 0 60px;
+  text-transform: uppercase;
+  width: 180px;
+}
+
+#mobi-church {background: url(img/nav-church.gif) no-repeat; height: 36px; margin-top: 15px; padding-top: 25px !important;}
+#mobi-arts {background: url(img/nav-arts-culture.gif) no-repeat; height: 36px; border-top: 1px solid #fff;}
+#mobi-story {background: url(img/nav-story.gif) no-repeat; height: 36px; border-top: 1px solid #fff;}
+#mobi-history {background: url(img/nav-christianhistory.gif) no-repeat; height: 41px; border-top: 1px solid #fff; padding-top: 10px !important}
+#mobi-theology {background: url(img/nav-theology.gif) no-repeat; height: 36px; border-top: 1px solid #fff;}
+#mobi-formation {background: url(img/nav-spiritualformation.gif) no-repeat; height: 36px; border-top: 1px solid #fff;}
+
+#switch {
+  background: #192f32 url(img/footer-bg.jpg) repeat-x;
+  padding: 30px 0 20px 0;
+  margin: 0;
+}
+
+#switch a {
+  color: #d3ddd9;
+  background: url(img/full-site.png) no-repeat;
+  background-position: right;
+  font-size: 20px;
+  font-weight: normal;
+  padding-right: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.post-name-mobile-home.page-title-area {
+  display: none;
+}
+
+.post.section.post-name-mobile-home {
+  background: url(img/home-content-bg.gif) repeat-x;
+  height: 296px;
+  width: auto;
+  left: 0;
+}
+
+/* Video Blog */
+
+.tubepress_container div {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+}
+
+.tubepress_thumbs {
+  border-bottom: none !important;
+  border-top: none !important;
+  height: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.tubepress_thumb {
+  display: block !important;
+  float: none !important;
+} 
+
+.wptouch-pro .tubepress_thumb img {
+  margin: 0 !important;
+}
+
+.wptouch-pro .tubepress_normal_embedded_wrapper {
+  width: 220px !important;
+}
+
+.wptouch-pro .tubepress_embedded_title {
+  width: auto !important;
+}
