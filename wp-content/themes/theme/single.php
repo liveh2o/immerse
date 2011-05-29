@@ -47,7 +47,7 @@ get_header(); ?>
         'tt', 'Post to Twitter'); ?>
     </span>
 </section>
-<div id="past-articles-popup" title="Past <?php echo $category->cat_name; ?> Articles">
+<div id="past-articles-popup" title="Past <?php echo $category[0]->cat_name; ?> Articles">
     <?php past_articles(); ?>
 </div>
 
