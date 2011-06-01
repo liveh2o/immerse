@@ -98,8 +98,8 @@ function ajax_contact() {
       $error .= "Please add a message";
     }
     if(empty($error)) {
-      $subject = "New contact form received";
-      $message = "You've received a new contact form. \n\n
+      $subject = "New message from immmersejournal.com";
+      $message = "You've received a new message. \n\n
           Name: ".$name."\n
           Mail: ".$mail."\n
           Message: ".$msg."\n";
