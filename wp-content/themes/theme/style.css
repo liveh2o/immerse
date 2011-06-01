@@ -1114,3 +1114,41 @@ div.widget_tag_cloud h4 {
   float:left;
   margin-right:5px;
 }
+
+.contact {
+  position:relative;
+}
+#node {
+  background:#fff;
+  border:1px solid #f00;
+  color:#f00;
+  display:none;
+  font-size:1.5em;
+  height:145px;
+  line-height:120%;
+  padding-top:40px;
+  position:absolute;
+  opacity:.8;
+  text-align:center;
+  width:369px;
+  z-index:100;
+}
+#node button {
+  position:absolute;
+    left:160px;
+    bottom:30px;
+}
+
+#success {
+  background:#fff;
+  color:#0d4447;
+  display:none;
+  font-size:1.5em;
+  height:95px;
+  padding-top:80px;
+  position:absolute;
+  opacity:.6;
+  text-align:center;
+  width:371px;
+  z-index:100;
+}

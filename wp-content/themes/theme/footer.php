@@ -38,20 +38,22 @@
 			</div>
 		</div>
 		
-		<div id="fcol3">
-			<h6>Contact Us</h6>			
-			<form action="/" method="post">
+		<div id="fcol3" class="contact">
+			<h6>Contact Us</h6>
+			<div id="node"></div>
+			<div id="success">Thanks. We'll get back to you shortly.</div>
+			<form name="contact_form" id="contact_me">
 				<p>
-					<label>Your Name</label>
-					<input type="text" class="text" value="" />
+					<label for="name">Your Name</label>
+					<input type="text" class="text" name="name" value="" />
 				</p>
 				<p>
-					<label>Your Email</label>
-					<input type="text" class="text" value="" />
+					<label for="mail">Your Email</label>
+					<input type="text" class="text" name="mail" value="" />
 				</p>
 				<p>
-					<label>Your Message</label>
-					<textarea class="message" rows="5" cols="5"></textarea>
+					<label for="message">Your Message</label>
+					<textarea class="message" rows="5" cols="5" name="message"></textarea>
 				</p>
 				<p>
 					<input type="submit" class="submit" value="Submit" />

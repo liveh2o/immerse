@@ -76,13 +76,49 @@ function latest_articles() {
   }
 }
 
-function the_styles() {
-  $template_url = get_bloginfo('template_directory');
-  wp_enqueue_style('styles', $template_url . '/reset.css');
-  wp_enqueue_style('styles', $template_url . '/styles.css');
-  wp_enqueue_style('styles', WP_PLUGIN_URL . '/tubepress/content/themes/styles.css');
+add_action('init', 'add_contact_script');
+function add_contact_script() {
+  wp_register_script('contact', get_bloginfo('template_directory') . '/contact.js', array('jquery'), '1.0' );
+  wp_enqueue_script('contact');
 }
-//add_action( 'wp_print_styles', 'the_styles' );
+function ajax_contact() {
+  if(!empty($_POST)) {
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $admin_mail = get_bloginfo('admin_email');
+    $msg = $_POST['message'];
+    $error = "";
+    if(!$name) {
+      $error .= "Please tell us your name<br/>";
+    }
+    if(!$mail) {
+      $error .= "Please tell us your E-Mail address<br/>";
+    }
+    if(!$msg) {
+      $error .= "Please add a message";
+    }
+    if(empty($error)) {
+      $subject = "New contact form received";
+      $message = "You've received a new contact form. \n\n
+          Name: ".$name."\n
+          Mail: ".$mail."\n
+          Message: ".$msg."\n";
+      $mail = mail($admin_mail, $subject, $message,
+      "From: ".$name." <".$mail.">rn"
+      ."Reply-To: ".$mail."rn"
+      ."X-Mailer: PHP/" . phpversion());
+      if($mail) {
+        echo "sent";
+      }
+      die();
+    } else {
+      echo $error;
+      die();
+    }
+  }
+}
+add_action('wp_ajax_nopriv_contact_form', 'ajax_contact');
+
 
 function register_my_menus() {
 	register_nav_menus(
