@@ -39,7 +39,7 @@ function footer_ad_space() {
   );
   $slug = uri_segments(1);
   $group = ($slug == '') ? 2 : $ad_map[$slug];
-  return adrotate_group($group);
+  return $group ? adrotate_group($group) : '';
 }
 
 function get_sections() {
