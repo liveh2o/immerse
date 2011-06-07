@@ -36,9 +36,7 @@ get_header(); ?>
   	<?php endif; ?>
     </article>
     <aside id="ads5">
-        <a href="#">
-          <img src="<?php bloginfo('template_directory'); ?>/img/sb2.jpg" />
-        </a>
+        <?php echo adrotate_block(9); ?>
     </aside>
 </section><!-- e: blog -->
 
