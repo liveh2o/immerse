@@ -35,11 +35,12 @@ function footer_ad_space() {
     'immerseblog' => 19,
     'videoblog' => 20,
     'subscribe' => 21,
-    'immersemobile' => 22
+    'immersemobile' => 22,
+    'contact-us' => 24
   );
   $slug = uri_segments(1);
   $group = ($slug == '') ? 2 : $ad_map[$slug];
-  return $group ? adrotate_group($group) : '';
+  return adrotate_group($group);
 }
 
 function get_sections() {
