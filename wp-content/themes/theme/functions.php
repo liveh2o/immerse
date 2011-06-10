@@ -143,6 +143,7 @@ add_action( 'template_redirect', 'redirect_to_post' );
 
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 79, 100, true );
+add_image_size( 'type4', 90, 119, true );
 
 if (class_exists('MultiPostThumbnails')) {
     new MultiPostThumbnails(array(
