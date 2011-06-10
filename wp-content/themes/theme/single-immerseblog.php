@@ -28,7 +28,9 @@ get_header(); ?>
 	<div class="entry is-post blog-archive" id="post-<?php the_ID(); ?>">
 		<h2><?php the_title(); ?></h2>
 		<p>by <strong><?php the_author() ?></strong> on <strong><?php the_time('F jS, Y') ?></strong> -- filed under <strong><?php the_category(', ') ?></strong></p>
-    <?php the_post_thumbnail( 'full' ); ?>
+		<div id="featured-blog-image">
+      <?php the_post_thumbnail( 'full' ); ?>
+    </div>
 		<?php the_content(); ?>
 	</div>
 	
@@ -41,15 +43,21 @@ get_header(); ?>
 		</div>
 	<?php endif; ?>
 	</div>
-	
-	<div id="below-blog">
-		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('below_blog')) : else : ?>
 
+	<div id="below-blog">
+    <section id="comments" class="section">
+        <h3 id="comments-bar">Comments</h3>
+        <div id="comwrap">
+            <?php comments_template(); ?>
+        </div>
+    </section>
+
+		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('below_blog')) : else : ?>
 		<div class="pre-widget">
 			<p><strong>Widgetized Sidebar</strong></p>
 			<p>This panel is active and ready for you to add some widgets via the WP Admin</p>
 		</div>
-	<?php endif; ?>
+	  <?php endif; ?>
 	</div>
 	
 	</div>

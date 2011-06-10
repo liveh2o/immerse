@@ -1007,22 +1007,29 @@ a.more span {
   margin-bottom: 10px;
 }
 #page .entry.is-post.blog-archive {
-  padding: 52px 20px;
+  padding: 32px 20px;
   float: left;
   border-bottom: none;
   width: 552px;
 }
 #page #entry-wrapper {
   overflow: hidden;
-} 
+}
+#featured-blog-image img {
+  margin-bottom:20px;
+  width:552px !important;
+}
 #entry-wrapper #blog-sidebar {
   float: left;
   width: 180px;
-  padding: 52px 20px 52px 0;
+  padding: 32px 20px 32px 0;
 }
 #entry-wrapper #below-blog {
   clear: both;
-  padding: 0 0 0 10px;
+  padding: 0;
+}
+div.widget_tag_cloud {
+  margin-left: 10px;  
 }
 div.widget_tag_cloud div.tagcloud {
   padding: 10px 30px 0 20px;
