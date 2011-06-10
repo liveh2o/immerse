@@ -576,6 +576,11 @@ hgroup.page-title-group h3.subtitle {
   text-transform: uppercase;
   font-weight: bold;
 }
+.entry h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .entry a { color: #254e4a; }
 .entry p {
   line-height: 1.5em;
@@ -1158,4 +1163,8 @@ div.widget_tag_cloud h4 {
   text-align:center;
   width:371px;
   z-index:100;
+}
+
+.details {
+  font-size:1.2em;
 }

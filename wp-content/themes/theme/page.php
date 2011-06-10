@@ -9,7 +9,7 @@ get_header(); ?>
 
 <h2 class="page-title"><?php the_title(); ?></h2>
 
-<section id="page" class="section">
+<section id="page" class="section <?php echo uri_segments(1); ?>">
 	<ul id="entry-social">
         <li><span class="es1">
         <?php tweet_this('twitter', '[TITLE] [EXCERPT] [URL] via @immersejournal', '[BLANK]',
