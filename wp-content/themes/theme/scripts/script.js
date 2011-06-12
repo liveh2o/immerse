@@ -12,4 +12,11 @@ $(document).ready(function(){
 	  $( "#past-articles-popup" ).dialog("open");
     e.preventDefault();
 	});
+	
+	$('.newsticker').innerfade({
+		speed: 'slow',
+		timeout: 8000,
+		type: 'sequence',
+		containerheight: '1em'
+	});
 });
