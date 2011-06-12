@@ -47,9 +47,6 @@ get_header(); ?>
         'tt', 'Post to Twitter'); ?>
     </span>
 </section>
-<div id="past-articles-popup" title="Past <?php echo $category[0]->cat_name; ?> Articles">
-    <?php past_articles(); ?>
-</div>
 
 <section id="article" class="section">
     <div id="page-window">
@@ -70,6 +67,9 @@ get_header(); ?>
     <p><?php the_author_meta('description'); ?></p>
 </section>
 
+<div id="past-articles-popup" title="Past <?php echo $category[0]->cat_name; ?> Articles">
+    <?php past_articles(); ?>
+</div>
 
 <section id="ads2" class="section">
     <?php
