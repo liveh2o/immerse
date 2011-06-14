@@ -1,5 +1,5 @@
 var position = 0;
-var offset = 705;
+var offset = 708;
 var width = 0;
 var pages = 0;
 var current_page = 1;
@@ -41,7 +41,7 @@ function togglePreviousButton() {
 
 $(document).ready(function() {
   var last_element = $('.paginate > p:last');
-  width = last_element.offset().left + last_element.width();
+  width = last_element.offset().left + 334;
   pages = parseInt(width / offset);
   content = $(".paginate:first");
 

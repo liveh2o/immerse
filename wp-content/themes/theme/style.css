@@ -546,7 +546,7 @@ hgroup.page-title-group h3.subtitle {
 }
 #article.no-header { padding-top: 35px; }
 #page-window {
-  height: 41em;
+  height: 540px;
   margin: 0 52px;
   overflow: hidden;
   padding: 52px 0 0;
@@ -555,15 +555,15 @@ hgroup.page-title-group h3.subtitle {
 }
 #page-window .entry.ar-entry {
   border-bottom: 0;
-  height: 41em;
+  height: 540px;
   padding: 0;
   position: absolute;
     left: 0;
     top: 52px;
-  width: auto !important;
-  -moz-column-width: 333px; 
+  width: 688px;
+  -moz-column-width: 334px; 
   -moz-column-gap: 20px;
-  -webkit-column-width: 333px; 
+  -webkit-column-width: 334px;
   -webkit-column-gap: 20px;
 }
 .entry {
