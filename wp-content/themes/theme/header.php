@@ -31,8 +31,8 @@ if($ip != "174.126.90.246"){
     <script src="<?php bloginfo('template_directory'); ?>/scripts/plugins.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/script.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/scripts/paginator.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery-innerfade.js"
-    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery-innerfade.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript">
       $(window).load(function() {
         $('#slider').nivoSlider({
