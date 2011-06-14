@@ -330,6 +330,7 @@ hgroup.page-title-group h3.subtitle {
   background: #ffffff;
   width: 792px;
   margin: auto;
+  overflow: hidden;
 }
 #page #entry-social {
   position: absolute;
@@ -590,6 +591,7 @@ hgroup.page-title-group h3.subtitle {
 .entry strong { font-weight: bold; }
 #article .navigation { border-bottom: 2px solid #bfbfbf; }
 .navigation {
+  clear: both;
   position: relative;
   padding: 26px 52px 52px;
   overflow: hidden;
@@ -745,6 +747,11 @@ div.ad_wrapper {
   height: 260px;
   width: 177px;
   border: 8px solid #fff;
+}
+#blog-sidebar {
+  margin-top: 32px;
+  overflow: hidden;
+  padding-left: 25px;
 }
 
 a.more {
@@ -1012,13 +1019,12 @@ a.more span {
   margin-bottom: 10px;
 }
 #page .entry.is-post.blog-archive {
-  padding: 32px 20px;
+  padding: 32px 20px 0;
   float: left;
   border-bottom: none;
   width: 552px;
 }
 #page #entry-wrapper {
-  overflow: hidden;
 }
 #featured-blog-image img {
   margin-bottom:20px;
@@ -1032,6 +1038,10 @@ a.more span {
 #entry-wrapper #below-blog {
   clear: both;
   padding: 0;
+}
+div#below-blog {
+  clear: both;
+  margin-bottom: 50px;
 }
 div.widget_tag_cloud {
   margin-left: 10px;  

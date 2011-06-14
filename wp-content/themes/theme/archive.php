@@ -24,16 +24,28 @@ get_header(); ?>
         <iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink() ?>&layout=button_count&show_faces=false&width=79&action=like&colorscheme=light" scrolling="no" frameborder="0"  allowTransparency="true" style="overflow:hidden; width:90px; height:29px; position: absolute;"></iframe>
         </li>
     </ul>
-
+	
+	<div id="entry-wrapper">
 	<?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
-	
-	<div id="entry-wrapper">		
+		
 	<div class="entry is-post blog-archive" id="post-<?php the_ID(); ?>">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		<p>by <strong><?php the_author() ?></strong> on <strong><?php the_time('F jS, Y') ?></strong> -- filed under <strong><?php the_category(', ') ?></strong></p>
-			
+		
 		<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+	</div>
+	
+	
+	<?php endwhile; ?>
+
+	<?php else : ?>
+
+	<h2 class="center">Not Found</h2>
+	<p class="center">Sorry, but you are looking for something that isn't here.</p>
+	<?php get_search_form(); ?>
+
+	<?php endif; ?>
 	</div>
 	
 	<div id="blog-sidebar">
@@ -46,6 +58,11 @@ get_header(); ?>
 	<?php endif; ?>
 	</div>
 	
+	<div class="navigation">
+		<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+		<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+	</div>
+	
 	<div id="below-blog">
 		<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('below_blog')) : else : ?>
 
@@ -55,23 +72,6 @@ get_header(); ?>
 		</div>
 	<?php endif; ?>
 	</div>
-	
-	</div>
-	
-	<?php endwhile; ?>
-
-	<div class="navigation">
-		<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-		<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-	</div>
-
-	<?php else : ?>
-
-	<h2 class="center">Not Found</h2>
-	<p class="center">Sorry, but you are looking for something that isn't here.</p>
-	<?php get_search_form(); ?>
-
-	<?php endif; ?>
 	
 	
 </section>

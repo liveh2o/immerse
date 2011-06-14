@@ -175,4 +175,10 @@ if (function_exists('register_sidebar')) {
 	));
 }
 
+//Modify the length of the_excerpt
+function new_excerpt_length($length) {
+	return 250;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
 ?>
