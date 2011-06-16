@@ -769,9 +769,8 @@ a.more span {
 #ads1 {
   position: relative;
   padding-bottom: 35px;
-  margin: auto;
+  margin-top: 10px;
   width: 792px;
-  margin: auto;
 }
 #ads1 a {
   height: 145px;
