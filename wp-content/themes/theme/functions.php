@@ -35,7 +35,7 @@ function footer_ad_space() {
     'immerseblog' => 19,
     'video-blog' => 20,
     'subscribe' => 21,
-    'immerse-mobile' => 25,
+    'immerse-mobile' => 22,
     'contact-us' => 24
   );
   $slug = uri_segments(1);
