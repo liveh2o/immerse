@@ -32,8 +32,8 @@ get_header(); ?>
 	<div class="entry is-post blog-archive" id="post-<?php the_ID(); ?>">
 		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		<p>by <strong><?php the_author() ?></strong> on <strong><?php the_time('F jS, Y') ?></strong> -- filed under <strong><?php the_category(', ') ?></strong></p>
-		
-		<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+		<?php the_advanced_excerpt('length=250&use_words=1&no_custom=1&ellipsis=%26hellip;'); ?>
+    <a href="<?php the_permalink(); ?>" class="more">Continue Reading <span>▶</span></a>
 	</div>
 	
 	

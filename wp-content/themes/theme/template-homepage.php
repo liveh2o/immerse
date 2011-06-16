@@ -28,10 +28,10 @@ get_header(); ?>
 
 <section id="blog" class="section">
     <article id="latest">
-        <h2>The Latest from the Blog</h2>
+      <h2>The Latest from the Blog</h2>
     <?php query_posts('post_type=immerseblog'); ?>
   	<?php if (have_posts()) : the_post(); ?>
-    		<?php the_excerpt('Read the rest of this entry &raquo;'); ?>
+    		<?php the_advanced_excerpt('length=110&use_words=1&no_custom=1&ellipsis=%26hellip;'); ?>
         <a href="<?php the_permalink(); ?>" class="more">Continue Reading <span>▶</span></a>
   	<?php endif; ?>
     </article>
