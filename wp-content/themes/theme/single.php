@@ -62,7 +62,7 @@ get_header(); ?>
 
 
 <section id="about" class="section">
-    <?php echo get_avatar( get_the_author_email(), '84' ); ?>
+    <?php the_author_image(); ?>
     <strong>About the Author</strong>
     <p><?php the_author_meta('description'); ?></p>
 </section>
