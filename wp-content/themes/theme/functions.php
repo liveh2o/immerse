@@ -39,7 +39,7 @@ function footer_ad_space() {
     'contact-us' => 24
   );
   $slug = uri_segments(1);
-  $group = ($slug == '') ? 2 : $ad_map[$slug];
+  $group = $ad_map[$slug] == '' ? 2 : $ad_map[$slug];
   return adrotate_group($group);
 }
 
