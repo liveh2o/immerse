@@ -658,6 +658,9 @@ div.navigation.search {
   width: 75%;
   padding: 4px;
 }
+a.dsq-subscribe-email em, a.dsq-subscribe-rss em, #dsq-content #dsq-footer li a .dsq-font, #dsq-account-dropdown a {
+  color: #26504c;
+}
 #ads4 {
   position: relative;
   padding:12px 0;

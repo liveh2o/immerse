@@ -33,8 +33,8 @@
 			</form>
 			
 			<div id="ipad">
-				<h5>Immerse on your iPad</h5>
-				<p><a href="http://itunes.apple.com/us/app/zinio-magazine-newsstand-reader/id364297166?mt=8&uo=4" target="itunes_store">Download the free Zinio app</a> for your iPad and search Immerse Journal</p>
+				<h5>Immerse Mobile</h5>
+				<p>Simply type <a href="http://www.immersejournal.com">www.immersejournal.com</a> into the browser on your tablet device or smartphone and away you go!</p>
 			</div>
 		</div>
 		
